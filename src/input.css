@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-link {
+    @apply pl-9 flex items-center text-secondary mt-3 mb-3;
+  }
+  .nav-section-header {
+    @apply pl-9 text-sm mb-5 text-secondary ml-[3px];
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
