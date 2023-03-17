@@ -8,6 +8,8 @@
     <!-- css imports -->
     <link href="../dist/output.css" rel="stylesheet" />
     <link href="./navbar.css" rel="stylesheet" />
+    <link href="./home.css" rel="stylesheet" />
+    <link href="./sidebar.css" rel="stylesheet" />
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,10 +23,12 @@
   </head>
   <body class="bg-slate-500 flex">
     <nav class="navbar w-[20%] h-auto pb-4">
+      <!-- logo -->
       <div class="logo-container mb-4">
         <img src="../static/logo.png" alt="mymovie logo" class="logo" />
         <h1>My movie<strong class="text-[35px] text-primary">.</strong></h1>
       </div>
+      <!-- main links -->
       <section class="text-sm pb-3 pt-3">
         <h2 class="nav-section-header">Menu</h2>
         <a class="nav-link active" href="#">
@@ -99,7 +103,10 @@
         </a>
       </section>
       <!-- notification container -->
-      <div class="notification-container"></div>
+      <div class="notification-container">
+        <br />
+        <br />
+      </div>
       <!-- tahmasious github -->
       <div
         class="github-link-container bg-[#131519] w-[80%] rounded-2xl table m-auto mt-10"
@@ -121,7 +128,80 @@
         >
       </div>
     </nav>
-    <main class="bg-amber-500 w-[100%]">here is main content</main>
+    <main class="w-[100%] p-8">
+      <header class="flex items-center justify-between">
+        <div class="search-container inline-flex items-center gap-3">
+          <a href="#" class="inline-flex items-center gap-3">
+            <img
+              class="rotate-180 inline w-4"
+              src="../static/arrow.png"
+              alt="arrow-left"
+            />
+            <img
+              class="inline w-4"
+              src="../static/arrow.png"
+              alt="arrow-right"
+            />
+          </a>
+          <div
+            class="searchbar border-[2.5px] border-secondary rounded-[20px] flex items-center p-2 text-secondary"
+          >
+            <img
+              class="w-7 inline"
+              src="../static/search.png"
+              alt="search icon"
+            />
+            <form class="inline" action="#">
+              <input
+                class="inline bg-transparent placeholder-secondary"
+                placeholder="Search..."
+                type="text"
+                name="q"
+              />
+            </form>
+          </div>
+        </div>
+        <div class="profile-container gap-5 inline-flex items-center">
+          <div class="inline notification">
+            <a href="#">
+              <!-- <strong class="text-[35px] text-primary">.</strong> -->
+              <img
+                class="inline w-6"
+                src="../static/notification.png"
+                alt="notification icon"
+              />
+            </a>
+          </div>
+          <div class="message inline">
+            <a href="#">
+              <!-- <strong class="text-[35px] text-primary">.</strong> -->
+              <img
+                class="inline w-6"
+                src="../static/message.png"
+                alt="message icon"
+              />
+            </a>
+          </div>
+          <div class="profile inline-flex">
+            <div
+              class="inline-block avatar-contaier p-1 border-[2.5px] border-primary rounded-full"
+            >
+              <img
+                class="rounded-full inline-block"
+                src="../static/tahmasious.jpg"
+                alt="avatar"
+                width="50px"
+                height="50px"
+              />
+            </div>
+            <div class="username-container p-2">
+              <span class="text-white">Tahmasious</span><br />
+              <span class="text-[14px] text-secondary">Level 12</span>
+            </div>
+          </div>
+        </div>
+      </header>
+    </main>
     <aside class="bg-indigo-600 w-[25%]">here side bar will be shown</aside>
   </body>
 </html>
