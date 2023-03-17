@@ -29,3 +29,10 @@ main {
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1a1c20",endColorstr="#141318",GradientType=1);
 }
+
+.suggestion-box .background-image {
+  background-image: url("../static/amelie.jpg");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}

@@ -11,6 +11,9 @@
     <link href="./home.css" rel="stylesheet" />
     <link href="./sidebar.css" rel="stylesheet" />
 
+    <!-- fav icon -->
+    <link rel="icon" type="image/x-icon" href="../static/logo.png" />
+
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,7 +22,7 @@
       rel="stylesheet"
     />
 
-    <title>Home</title>
+    <title>Home | My movie.</title>
   </head>
   <body class="bg-slate-500 flex">
     <nav class="navbar w-[20%] h-auto pb-4">
@@ -128,7 +131,9 @@
         >
       </div>
     </nav>
+    <!-- main content (middle section) -->
     <main class="w-[100%] p-8">
+      <!-- header (searchbar + profile container) -->
       <header class="flex items-center justify-between">
         <div class="search-container inline-flex items-center gap-3">
           <a href="#" class="inline-flex items-center gap-3">
@@ -201,6 +206,287 @@
           </div>
         </div>
       </header>
+      <!-- content section -->
+      <section class="content mt-7">
+        <!-- suggestion section -->
+        <section class="mb-7">
+          <h2 class="text-white mb-3 text-lg">Suggestion</h2>
+          <div class="suggestion-box relative h-96 w-full">
+            <div
+              class="background-image rounded-3xl absolute left-0 top-0 w-full h-full z-10"
+            ></div>
+            <div
+              class="content z-20 absolute left-0 flex bottom-0 h-full w-full flex-col justify-between p-10"
+            >
+              <div class="common-watchers-container">
+                <img
+                  src="../static/friend-avatars/1.jpg"
+                  class="w-6 h-6 rounded-full inline-block"
+                  alt="common friend avatar"
+                />
+
+                <img
+                  src="../static/friend-avatars/2.jpg"
+                  class="w-6 h-6 rounded-full inline-block relative left-[-10px]"
+                  alt="common friend avatar"
+                />
+
+                <img
+                  src="../static/friend-avatars/3.jpg"
+                  class="w-6 h-6 rounded-full inline-block relative left-[-20px]"
+                  alt="common friend avatar"
+                />
+                <span class="text-white text-sm relative left-[-20px]"
+                  >+5 friends are watching</span
+                >
+              </div>
+              <div class="movie-title-container">
+                <h3 class="movie-title text-white text-5xl">Amelie</h3>
+                <h4 class="mb-7 text-gray-300">naive girl in Paris</h4>
+                <div class="flex items-center gap-6">
+                  <a
+                    href="#"
+                    class="bg-primary rounded-xl py-3 px-4 inline-block text-white shadow-lg shadow-primary-dark text-sm"
+                    >Watch</a
+                  >
+                  <a
+                    href="#"
+                    class="text-white text-lg bg-[#ffffff5e] rounded-2xl py-[10px] px-3"
+                  >
+                    <img
+                      src="../static/plus.png"
+                      alt="#"
+                      class="inline-block w-6 h-6"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- parties section -->
+        <section class="mb-7">
+          <!-- section title and see all container -->
+          <div class="flex justify-between mb-3 items-center">
+            <h2 class="text-white text-lg">Parties</h2>
+            <a href="#" class="text-primary text-sm">See all</a>
+          </div>
+          <!-- row of parties -->
+          <div class="flex gap-[15px]">
+            <!-- a party -->
+            <div class="party-container">
+              <div class="party-images-container flex justify-between mb-4">
+                <div class="party-avatar-container">
+                  <img
+                    src="../static/party-avatars/1.png"
+                    alt="party avatar"
+                    class="h-10 w-10 rounded-2xl"
+                  />
+                </div>
+                <div class="party-memeber-avatar-container">
+                  <img
+                    src="../static/friend-avatars/1.jpg"
+                    class="w-6 h-6 rounded-full inline-block relative right-[-20px]"
+                    alt="common friend avatar"
+                  />
+
+                  <img
+                    src="../static/friend-avatars/2.jpg"
+                    class="w-6 h-6 rounded-full inline-block relative right-[-10px]"
+                    alt="common friend avatar"
+                  />
+
+                  <img
+                    src="../static/friend-avatars/3.jpg"
+                    class="w-6 h-6 rounded-full inline-block relative"
+                    alt="common friend avatar"
+                  />
+                </div>
+              </div>
+              <div class="party-title-container">
+                <h3 class="text-white">Void lovers</h3>
+                <span class="text-secondary">Yes! we love nothing.</span>
+              </div>
+            </div>
+            <!-- another party -->
+            <div class="party-container">
+              <div class="party-images-container flex justify-between mb-4">
+                <div class="party-avatar-container">
+                  <img
+                    src="../static/party-avatars/2.jpg"
+                    alt="party avatar"
+                    class="h-10 w-10 rounded-2xl"
+                  />
+                </div>
+                <div class="party-memeber-avatar-container">
+                  <img
+                    src="../static/friend-avatars/1.jpg"
+                    class="w-6 h-6 rounded-full inline-block relative right-[-20px]"
+                    alt="common friend avatar"
+                  />
+
+                  <img
+                    src="../static/friend-avatars/2.jpg"
+                    class="w-6 h-6 rounded-full inline-block relative right-[-10px]"
+                    alt="common friend avatar"
+                  />
+
+                  <img
+                    src="../static/friend-avatars/3.jpg"
+                    class="w-6 h-6 rounded-full inline-block relative"
+                    alt="common friend avatar"
+                  />
+                </div>
+              </div>
+              <div class="party-title-container">
+                <h3 class="text-white">So, what ?</h3>
+                <span class="text-secondary">search for answer</span>
+              </div>
+            </div>
+            <!-- again, a fucking party -->
+            <div class="party-container">
+              <div class="party-images-container flex justify-between mb-4">
+                <div class="party-avatar-container">
+                  <img
+                    src="../static/party-avatars/3.jpg"
+                    alt="party avatar"
+                    class="h-10 w-10 rounded-2xl"
+                  />
+                </div>
+                <div class="party-memeber-avatar-container">
+                  <img
+                    src="../static/friend-avatars/1.jpg"
+                    class="w-6 h-6 rounded-full inline-block relative right-[-20px]"
+                    alt="common friend avatar"
+                  />
+
+                  <img
+                    src="../static/friend-avatars/2.jpg"
+                    class="w-6 h-6 rounded-full inline-block relative right-[-10px]"
+                    alt="common friend avatar"
+                  />
+
+                  <img
+                    src="../static/friend-avatars/3.jpg"
+                    class="w-6 h-6 rounded-full inline-block relative"
+                    alt="common friend avatar"
+                  />
+                </div>
+              </div>
+              <div class="party-title-container">
+                <h3 class="text-white">soul hunter</h3>
+                <span class="text-secondary">we hunt souls.</span>
+              </div>
+            </div>
+            <!-- god damn it -->
+            <div class="party-container">
+              <div class="party-images-container flex justify-between mb-4">
+                <div class="party-avatar-container">
+                  <img
+                    src="../static/party-avatars/4.jpg"
+                    alt="party avatar"
+                    class="h-10 w-10 rounded-2xl"
+                  />
+                </div>
+                <div class="party-memeber-avatar-container">
+                  <img
+                    src="../static/friend-avatars/1.jpg"
+                    class="w-6 h-6 rounded-full inline-block relative right-[-20px]"
+                    alt="common friend avatar"
+                  />
+
+                  <img
+                    src="../static/friend-avatars/2.jpg"
+                    class="w-6 h-6 rounded-full inline-block relative right-[-10px]"
+                    alt="common friend avatar"
+                  />
+
+                  <img
+                    src="../static/friend-avatars/3.jpg"
+                    class="w-6 h-6 rounded-full inline-block relative"
+                    alt="common friend avatar"
+                  />
+                </div>
+              </div>
+              <div class="party-title-container">
+                <h3 class="text-white">starving mouse</h3>
+                <span class="text-secondary">mouse is not a cat.</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Countinue watching -->
+        <section class="mb-7">
+          <h2 class="text-white mb-3 text-lg">Countinue watching</h2>
+          <!-- row of cont. watching -->
+          <div class="flex gap-[15px]">
+            <!-- a movie -->
+            <div class="movie-cont-watch-container w-[24%]">
+              <img
+                class="overflow-hidden rounded-t-2xl object-cover h-[160px]"
+                src="../static/movie-snapshot/stranger-things.jpg"
+                alt="movie snapshot"
+              />
+              <div class="watch-progress-container h-[3px] bg-secondary">
+                <div class="watch-progress h-[3px] bg-primary w-[67%]"></div>
+              </div>
+              <div
+                class="movie-cont-watch-title rounded-b-2xl bg-[#1E1F26] p-4"
+              >
+                <h3 class="text-white">Stranger things</h3>
+              </div>
+            </div>
+            <!-- another movie -->
+            <div class="movie-cont-watch-container w-[24%]">
+              <img
+                class="overflow-hidden rounded-t-2xl object-cover h-[160px]"
+                src="../static/movie-snapshot/la-haine.jpg"
+                alt="movie snapshot"
+              />
+              <div class="watch-progress-container h-[3px] bg-secondary">
+                <div class="watch-progress h-[3px] bg-primary w-[55%]"></div>
+              </div>
+              <div
+                class="movie-cont-watch-title rounded-b-2xl bg-[#1E1F26] p-4"
+              >
+                <h3 class="text-white">La haine</h3>
+              </div>
+            </div>
+            <!-- movie, yes a movie -->
+            <div class="movie-cont-watch-container w-[24%]">
+              <img
+                class="overflow-hidden rounded-t-2xl object-cover h-[160px]"
+                src="../static/movie-snapshot/12-angry-man.webp"
+                alt="movie snapshot"
+              />
+              <div class="watch-progress-container h-[3px] bg-secondary">
+                <div class="watch-progress h-[3px] bg-primary w-[33%]"></div>
+              </div>
+              <div
+                class="movie-cont-watch-title rounded-b-2xl bg-[#1E1F26] p-4"
+              >
+                <h3 class="text-white">12 angry man</h3>
+              </div>
+            </div>
+            <!-- movie -->
+            <div class="movie-cont-watch-container w-[24%]">
+              <img
+                class="overflow-hidden rounded-t-2xl object-cover h-[160px]"
+                src="../static/movie-snapshot/project-x.jpg"
+                alt="movie snapshot"
+              />
+              <div class="watch-progress-container h-[3px] bg-secondary">
+                <div class="watch-progress h-[3px] bg-primary w-[90%]"></div>
+              </div>
+              <div
+                class="movie-cont-watch-title rounded-b-2xl bg-[#1E1F26] p-4"
+              >
+                <h3 class="text-white">Project X</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
     </main>
     <aside class="bg-indigo-600 w-[25%]">here side bar will be shown</aside>
   </body>
