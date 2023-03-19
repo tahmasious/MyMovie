@@ -12,9 +12,59 @@
   .party-container {
     @apply rounded-2xl bg-[#1E1F26] p-5 w-[24%] shadow-none shadow-black hover:shadow-2xl hover:bg-[#282a33] hover:w-[26%] transition-all;
   }
+  .trend-movie {
+    @apply rounded-2xl mb-[-50px] border-[3px] border-transparent transition-all  w-[150px] h-[220px];
+  }
+  img.movie-poster {
+    @apply bg-slate-50  w-[150px] h-[220px]  rounded-2xl border-transparent transition-all mb-2;
+  }
 }
 
 body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+.searchbar input {
+  outline: none;
+}
+main {
+  background: rgb(26, 28, 32);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(26, 28, 32, 1) 0%,
+    rgba(27, 26, 31, 1) 23%,
+    rgba(23, 24, 28, 1) 50%,
+    rgba(22, 21, 26, 1) 75%,
+    rgba(21, 22, 26, 1) 90%,
+    rgba(20, 19, 24, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(26, 28, 32, 1) 0%,
+    rgba(27, 26, 31, 1) 23%,
+    rgba(23, 24, 28, 1) 50%,
+    rgba(22, 21, 26, 1) 75%,
+    rgba(21, 22, 26, 1) 90%,
+    rgba(20, 19, 24, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(26, 28, 32, 1) 0%,
+    rgba(27, 26, 31, 1) 23%,
+    rgba(23, 24, 28, 1) 50%,
+    rgba(22, 21, 26, 1) 75%,
+    rgba(21, 22, 26, 1) 90%,
+    rgba(20, 19, 24, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1a1c20",endColorstr="#141318",GradientType=1);
+}
+.overlay-desc {
+  background-color: rgba(41, 41, 41, 0.7);
+  color: white;
+}
+.imdb {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.thumbnail-image:hover .overlay-desc {
+  opacity: 1;
 }
