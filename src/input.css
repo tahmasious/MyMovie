@@ -18,6 +18,9 @@
   img.movie-poster {
     @apply bg-slate-50  w-[150px] h-[220px]  rounded-2xl border-transparent transition-all mb-2;
   }
+  .info-item {
+    @apply rounded-2xl py-7 w-full;
+  }
 }
 
 body {
