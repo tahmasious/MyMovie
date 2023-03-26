@@ -917,6 +917,14 @@ img.movie-poster {
   height: 0.5rem;
 }
 
+.h-14 {
+  height: 3.5rem;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -1023,6 +1031,18 @@ img.movie-poster {
 
 .w-\[3000px\] {
   width: 3000px;
+}
+
+.w-14 {
+  width: 3.5rem;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
 }
 
 .rotate-180 {
@@ -1177,6 +1197,14 @@ img.movie-poster {
   border-width: 0px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
 .border-primary {
   --tw-border-opacity: 1;
   border-color: rgb(217 31 39 / var(--tw-border-opacity));
@@ -1185,6 +1213,11 @@ img.movie-poster {
 .border-secondary {
   --tw-border-opacity: 1;
   border-color: rgb(73 75 87 / var(--tw-border-opacity));
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-\[\#131519\] {
@@ -1242,6 +1275,11 @@ img.movie-poster {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-slate-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
 .bg-contain {
