@@ -8,7 +8,7 @@
     <!-- css imports -->
     <link href="../dist/output.css" rel="stylesheet" />
     <link href="./navbar.css" rel="stylesheet" />
-    <link href="./single-movie.css" rel="stylesheet" />
+    <link href="./setting.css" rel="stylesheet" />
     <link href="./sidebar.css" rel="stylesheet" />
 
     <!-- fav icon -->
@@ -22,7 +22,7 @@
       rel="stylesheet"
     />
 
-    <title>Stranger things | My movie.</title>
+    <title>Setting | My movie.</title>
   </head>
   <body class="flex">
     <nav class="navbar w-[20%] h-auto pb-4">
@@ -43,9 +43,9 @@
             />
             <span>Home</span>
           </a>
-          <a class="nav-link active" href="#">
+          <a class="nav-link" href="./browse.html">
             <img
-              src="../static/compass-active.png"
+              src="../static/compass.png"
               alt="browse icon"
               class="w-4 h-4 inline mr-3"
             />
@@ -89,9 +89,9 @@
         </section>
         <section class="text-sm pb-3 pt-3">
           <h2 class="nav-section-header">general</h2>
-          <a class="nav-link" href="./setting.html">
+          <a class="nav-link active" href="#">
             <img
-              src="../static/setting.png"
+              src="../static/setting-active.png"
               alt="setting icon"
               class="w-4 h-4 inline mr-3"
             />
@@ -136,178 +136,91 @@
       </div>
     </nav>
     <!-- main content (middle section) -->
-    <main class="w-[100%]">
-      <!-- content section -->
-      <section class="content relative h-[33rem]">
-        <!-- movie to be in background -->
-        <img
-          src="../static/movie-snapshot/stranger-things.jpg"
-          class="absolute top-0 left-0 w-full h-[30rem] object-cover"
-          alt="movie cover"
-        />
+    <main class="w-[100%] p-8">
+      <div class="flex gap-3">
+        <!-- profile statics  -->
         <div
-          class="video-overlay absolute top-0 left-0 w-full p-16 pb-0 h-[30rem] flex flex-col justify-between"
+          class="profile-data-container w-[300px] rounded-2xl overflow-hidden bg-[#202228]"
         >
-          <!-- header (searchbar) -->
-          <header class="relative flex justify-between items-center">
-            <a
-              href="#"
-              class="glss-bg w-8 h-8 flex justify-center items-center border-[1.5px] border-secondary rounded-[20px]"
-            >
-              <img
-                class="rotate-180 inline w-4 h-4"
-                src="../static/arrow.png"
-                alt="arrow-left"
-              />
-            </a>
-            <div class="search-container flex items-center gap-3 justify-end">
-              <div
-                class="glss-bg border-[1.5px] border-secondary rounded-[20px] flex items-center p-2 text-secondary"
-              >
-                <img
-                  class="w-7 inline"
-                  src="../static/search.png"
-                  alt="search icon"
-                />
-                <form class="inline" action="#">
-                  <input
-                    class="inline bg-transparent placeholder-secondary"
-                    placeholder="Search..."
-                    type="text"
-                    name="q"
-                  />
-                </form>
-              </div>
+          <img
+            src="../static/tahmasious.jpg"
+            alt="user profile image"
+            class="h-[150px] w-full object-cover"
+          />
+          <h1 class="username text-center text-white mt-4 mb-0 text-lg">
+            Tahmasious
+          </h1>
+          <h2 class="text-sm text-secondary text-center">@tahmasious</h2>
+          <div
+            class="statics-container flex justify-around items-center text-white my-4"
+          >
+            <div class="parties-static">
+              <h3 class="text-center">15</h3>
+              <h3 class="text-sm text-center text-secondary">parties</h3>
             </div>
-          </header>
-          <section class="single-movie-container">
-            <div class="flex justify-between items-center">
-              <div>
-                <span class="movie-directors text-white font-bold"
-                  >Shawn Levy, Matt Duffer, Ross Duffer</span
-                >
-                <h2 class="text-white text-5xl pt-px font-bold">
-                  Stranger things
-                </h2>
-                <div class="genre-container mb-3 mt-1">
-                  <span class="movie-genre">science fiction</span>
-                  <span class="movie-genre">horror</span>
-                  <span class="movie-genre">drama</span>
-                  <span class="movie-genre">mystery</span>
-                </div>
-              </div>
-              <a
-                href="#"
-                class="text-white text-lg glss-bg rounded-2xl py-[10px] px-3"
-              >
-                <img
-                  src="../static/plus.png"
-                  alt="#"
-                  class="inline-block w-6 h-6"
-                />
-              </a>
+            <div class="divider w-[1px] h-[30px] bg-secondary"></div>
+            <div class="followers-static">
+              <h3 class="text-center">584M</h3>
+              <h3 class="text-sm text-center text-secondary">followers</h3>
             </div>
-            <div class="flex justify-between gap-2">
-              <a href="#" class="info-item play-btn bg-primary">
-                <img
-                  src="../static/play-btn.png"
-                  alt="play-icon"
-                  class="w-12 h-12 m-auto"
-                />
-              </a>
-              <!-- info container -->
-              <div
-                class="info-item glss-bg flex justify-center items-center relative"
-              >
-                <div class="info-title font-bold absolute left-0">
-                  <span class="text-secondary inline-block rotate-[-90deg]"
-                    >Length</span
-                  >
-                </div>
-                <div class="info-value font-bold">
-                  <span class="text-white text-4xl">130 min</span>
-                </div>
-              </div>
-              <!-- info container -->
-              <div
-                class="info-item glss-bg flex justify-center items-center relative"
-              >
-                <div class="info-title font-bold absolute left-0">
-                  <span class="text-secondary inline-block rotate-[-90deg]"
-                    >Release</span
-                  >
-                </div>
-                <div class="info-value font-bold">
-                  <span class="text-white text-4xl">2014</span>
-                </div>
-              </div>
-              <!-- info container -->
-              <div
-                class="info-item glss-bg flex justify-center items-center relative"
-              >
-                <div class="info-title font-bold absolute left-0">
-                  <span class="text-secondary inline-block rotate-[-90deg]"
-                    >Budget</span
-                  >
-                </div>
-                <div class="info-value font-bold">
-                  <span class="text-white text-4xl">$140M</span>
-                </div>
-              </div>
+            <div class="divider w-[1px] h-[30px] bg-secondary"></div>
+            <div class="following-static">
+              <h3 class="text-center">1</h3>
+              <h3 class="text-sm text-center text-secondary">followings</h3>
             </div>
-          </section>
+          </div>
+          <hr class="w-[90%] m-auto bg-secondary h-px border-0" />
+          <a href="#" class="m-auto my-4 table text-primary"> Change info </a>
         </div>
-      </section>
-      <div class="p-16 pt-0">
-        <section class="description mb-6">
-          <h2 class="text-secondary mb-2">DESCRIPTION</h2>
-          <p class="text-white">
-            Set in the 1980s, the series centers around the residents of the
-            fictional small town of Hawkins, Indiana, as they are plagued by a
-            hostile alternate dimension known as the "Upside Down", after a
-            nearby human experimentation facility opens a gateway between the
-            Upside Down and the normal world.
-          </p>
-        </section>
-        <section class="notable-cast mb-6">
-          <h2 class="text-secondary mb-2">NOTABLE CAST</h2>
-          <!-- a cast  -->
-          <div class="inline-flex flex-col justify-start items-center mr-3">
-            <img
-              src="../static/cast-profile/sadi-sink.jpg"
-              alt="cast profile"
-              class="w-[55px] h-[55px] rounded-full object-cover"
-            />
-            <span class="text-white text-sm">Sadie Sink</span>
+        <div class="w-full flex flex-col gap-3">
+          <div
+            class="level-statics rounded-2xl overflow-hidden bg-[#202228] w-full p-6"
+          >
+            <div class="flex justify-between">
+              <h2 class="text-2xl text-white mb-2">
+                User level : <span class="font-bold">12</span>
+              </h2>
+              <h2 class="text-lg text-white mb-2">
+                Total XP : <span class="font-bold">5401</span>
+              </h2>
+            </div>
+            <div class="bg-secondary rounded-2xl h-2 w-full block">
+              <div class="bg-primary rounded-2xl h-2 w-[12%] block"></div>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-white">12</span>
+              <span class="text-white">13</span>
+            </div>
           </div>
-
-          <!-- a cast  -->
-          <div class="inline-flex flex-col justify-start items-center mx-3">
-            <img
-              src="../static/cast-profile/mbb.jpg"
-              alt="cast profile"
-              class="w-[55px] h-[55px] rounded-full object-cover"
-            />
-            <span class="text-white text-sm">Millie Bobby</span>
+          <div class="flex gap-3 h-full">
+            <div
+              class="rounded-2xl overflow-hidden bg-[#202228] w-full flex flex-col gap-3 justify-center p-2"
+            >
+              <h2 class="text-white font-bold text-center text-4xl">121 H</h2>
+              <h3 class="text-secondary text-center">spent in app</h3>
+            </div>
+            <div
+              class="rounded-2xl overflow-hidden bg-[#202228] w-full flex flex-col gap-3 justify-center p-2"
+            >
+              <h2 class="text-white font-bold text-center text-4xl">Dark</h2>
+              <h3 class="text-secondary text-center">Favorite genre</h3>
+            </div>
+            <div
+              class="rounded-2xl overflow-hidden bg-[#202228] w-full flex flex-col gap-3 justify-center p-2"
+            >
+              <h2 class="text-white font-bold text-center text-4xl">70 H</h2>
+              <h3 class="text-secondary text-center">spent watching movies</h3>
+            </div>
           </div>
-
-          <!-- a cast  -->
-          <div class="inline-flex flex-col justify-start items-center mx-3">
-            <img
-              src="../static/cast-profile/Caleb_McLaughlin_by_Gage_Skidmore.jpg"
-              alt="cast profile"
-              class="w-[55px] h-[55px] rounded-full object-cover"
-            />
-            <span class="text-white text-sm">Caleb McLaughlin </span>
-          </div>
-        </section>
-        <section class="similar-movies movie-poster-container">
+        </div>
+      </div>
+      <section>
+        <section class="movie-poster-container mt-8">
           <div class="flex justify-between mb-3 items-center">
-            <h2 class="text-secondary mb-2">SIMILAR MOVIES</h2>
-            <a href="#" class="text-primary text-sm">See all</a>
+            <h2 class="text-white text-lg">watched movies</h2>
           </div>
           <div class="flex justify-between">
-            <!-- new movies container  -->
+            <!-- watched movies container  -->
             <div>
               <a class="thumbnail-image relative">
                 <img
@@ -336,7 +249,7 @@
               </a>
               <h3 class="text-white ml-1">Joker</h3>
             </div>
-            <!-- new movies container  -->
+            <!-- watched movies container  -->
             <div>
               <a class="thumbnail-image relative">
                 <img
@@ -365,7 +278,7 @@
               </a>
               <h3 class="text-white ml-1">blacklist</h3>
             </div>
-            <!-- new movies container  -->
+            <!-- watched movies container  -->
             <div>
               <a class="thumbnail-image relative">
                 <img
@@ -394,7 +307,7 @@
               </a>
               <h3 class="text-white ml-1">John Wick</h3>
             </div>
-            <!-- new movies container  -->
+            <!-- watched movies container  -->
             <div>
               <a class="thumbnail-image relative">
                 <img
@@ -423,7 +336,7 @@
               </a>
               <h3 class="text-white ml-1">Mag eleph</h3>
             </div>
-            <!-- new movies container  -->
+            <!-- watched movies container  -->
             <div>
               <a class="thumbnail-image relative">
                 <img
@@ -452,7 +365,7 @@
               </a>
               <h3 class="text-white ml-1">Noise</h3>
             </div>
-            <!-- new movies container  -->
+            <!-- watched movies container  -->
             <div>
               <a class="thumbnail-image relative">
                 <img
@@ -483,7 +396,7 @@
             </div>
           </div>
         </section>
-      </div>
+      </section>
     </main>
     <aside class="w-[25%] pt-16">
       <!-- online friends bar -->
