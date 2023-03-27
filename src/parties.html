@@ -8,7 +8,7 @@
     <!-- css imports -->
     <link href="../dist/output.css" rel="stylesheet" />
     <link href="./navbar.css" rel="stylesheet" />
-    <link href="./watchlist.css" rel="stylesheet" />
+    <link href="./home.css" rel="stylesheet" />
     <link href="./sidebar.css" rel="stylesheet" />
 
     <!-- fav icon -->
@@ -22,9 +22,9 @@
       rel="stylesheet"
     />
 
-    <title>Watchlist | My movie.</title>
+    <title>Parties | My movie.</title>
   </head>
-  <body class="flex">
+  <body class="bg-slate-500 flex">
     <nav class="navbar w-[20%] h-auto pb-4">
       <div class="sticky top-0">
         <!-- logo -->
@@ -51,9 +51,9 @@
             />
             <span>Browse</span>
           </a>
-          <a class="nav-link active" href="#">
+          <a class="nav-link" href="./watchlist.html">
             <img
-              src="../static/heart-active.png"
+              src="../static/heart.png"
               alt="heart icon"
               class="w-4 h-4 inline mr-3"
             />
@@ -78,9 +78,9 @@
             />
             <span>Friends</span>
           </a>
-          <a class="nav-link" href="./parties.html">
+          <a class="nav-link active" href="#">
             <img
-              src="../static/party.png"
+              src="../static/party-active.png"
               alt="party icon"
               class="w-4 h-4 inline mr-3"
             />
@@ -137,104 +137,44 @@
     </nav>
     <!-- main content (middle section) -->
     <main class="w-[100%] p-8">
-      <section>
-        <h2 class="text-white mb-3 text-lg">Watchlist</h2>
-        <div class="row flex gap-3">
-          <div
-            class="watchlist-card bg-cover p-4 w-full rounded-xl"
-            style="
-              background-image: url('../static/movie-snapshot/memories-of-a-murder.jpg');
-            "
-          >
-            <h2 class="font-bold text-lg text-white mt-16">
-              Memories of Murder
-            </h2>
-            <h3 class="text-white">2003</h3>
-            <div class="flex justify-between">
-              <a href="#" class="text-white bg-primary py-3 px-2 rounded-2xl"
-                >watch</a
-              >
-              <a
-                href="#"
-                class="text-white text-lg bg-[#ffffff5e] rounded-2xl py-2 px-2"
-              >
-                <img
-                  src="../static/plus.png"
-                  alt="#"
-                  class="inline-block w-6 h-6 rotate-[45deg]"
-                />
-              </a>
-            </div>
-          </div>
-          <div
-            class="watchlist-card bg-cover p-4 w-full rounded-xl"
-            style="
-              background-image: url('../static/movie-snapshot/curious.webp');
-            "
-          >
-            <h2 class="font-bold text-lg text-white mt-16">Benjamin Button</h2>
-            <h3 class="text-white">2003</h3>
-            <div class="flex justify-between">
-              <a href="#" class="text-white bg-primary py-3 px-2 rounded-2xl"
-                >watch</a
-              >
-              <a
-                href="#"
-                class="text-white text-lg bg-[#ffffff5e] rounded-2xl py-2 px-2"
-              >
-                <img
-                  src="../static/plus.png"
-                  alt="#"
-                  class="inline-block w-6 h-6 rotate-[45deg]"
-                />
-              </a>
-            </div>
-          </div>
-          <div
-            class="watchlist-card bg-cover p-4 w-full rounded-xl"
-            style="
-              background-image: url('../static/movie-snapshot/Detroit_Become_Human.webp');
-            "
-          >
-            <h2 class="font-bold text-lg text-white mt-16">Detroit</h2>
-            <h3 class="text-white">2016</h3>
-            <div class="flex justify-between">
-              <a href="#" class="text-white bg-primary py-3 px-2 rounded-2xl"
-                >watch</a
-              >
-              <a
-                href="#"
-                class="text-white text-lg bg-[#ffffff5e] rounded-2xl py-2 px-2"
-              >
-                <img
-                  src="../static/plus.png"
-                  alt="#"
-                  class="inline-block w-6 h-6 rotate-[45deg]"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="watchlist-card bg-cover p-4 w-full rounded-xl">
-            <h2 class="font-bold text-lg text-white mt-16">Amelie</h2>
-            <h3 class="text-white">2001</h3>
-            <div class="flex justify-between">
-              <a href="#" class="text-white bg-primary py-3 px-2 rounded-2xl"
-                >watch</a
-              >
-              <a
-                href="#"
-                class="text-white text-lg bg-[#ffffff5e] rounded-2xl py-2 px-2"
-              >
-                <img
-                  src="../static/plus.png"
-                  alt="#"
-                  class="inline-block w-6 h-6 rotate-[45deg]"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div class="parties-header flex justify-between items-center py-3">
+        <h2 class="text-white text-lg">Parties</h2>
+        <a href="#" class="text-primary p-2 rounded-2xl">create a new party</a>
+      </div>
+      <div class="container flex justify-between m-auto gap-3 flex-wrap">
+        <a href="#" class="bg-[#1E1F26] w-[48%] p-6 rounded-2xl">
+          <img
+            src="../static/party-avatars/1.png"
+            alt="party avatar"
+            class="rounded-3xl w-auto"
+          />
+          <h3 class="text-white text-center mt-4">Void lovers</h3>
+        </a>
+        <a href="#" class="bg-[#1E1F26] w-[48%] p-6 rounded-2xl">
+          <img
+            src="../static/party-avatars/2.jpg"
+            alt="party avatar"
+            class="rounded-3xl w-auto"
+          />
+          <h3 class="text-white text-center mt-4">Void lovers</h3>
+        </a>
+        <a href="#" class="bg-[#1E1F26] w-[48%] p-6 rounded-2xl">
+          <img
+            src="../static/party-avatars/3.jpg"
+            alt="party avatar"
+            class="rounded-3xl w-auto"
+          />
+          <h3 class="text-white text-center mt-4">Void lovers</h3>
+        </a>
+        <a href="#" class="bg-[#1E1F26] w-[48%] p-6 rounded-2xl">
+          <img
+            src="../static/party-avatars/4.jpg"
+            alt="party avatar"
+            class="rounded-3xl w-auto"
+          />
+          <h3 class="text-white text-center mt-4">Void lovers</h3>
+        </a>
+      </div>
     </main>
     <aside class="w-[25%] pt-16">
       <!-- online friends bar -->
