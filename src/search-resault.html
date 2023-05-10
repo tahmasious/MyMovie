@@ -51,7 +51,7 @@
             />
             <span>Home</span>
           </a>
-          <a class="nav-link active" href="#">
+          <a class="nav-link active" href="./browse.html">
             <img
               src="../static/compass-active.png"
               alt="browse icon"
@@ -145,91 +145,10 @@
     </nav>
     <!-- main content (middle section) -->
     <main class="w-[100%]">
-      <!-- content section -->
-      <section class="content relative h-[33rem] sm:block hidden">
-        <!-- movie to be in background -->
-        <video
-          autoplay
-          muted
-          loop
-          id="myVideo"
-          class="absolute top-0 left-0 w-full h-[30rem] object-cover"
-        >
-          <source src="../static/movie-trailer/TLOU.mp4" type="video/mp4" />
-        </video>
-        <div
-          class="video-overlay absolute top-0 left-0 w-full p-16 pb-0 h-[30rem] flex flex-col justify-between"
-        >
-          <!-- header (searchbar) -->
-          <header class="relative">
-            <div class="search-container flex items-center gap-3 justify-end">
-              <div
-                class="searchbar border-[1.5px] border-secondary rounded-[20px] flex items-center p-2 text-secondary"
-              >
-                <img
-                  class="w-7 inline"
-                  src="../static/search.png"
-                  alt="search icon"
-                />
-                <form class="inline" action="./search-resault.html">
-                  <input
-                    class="inline bg-transparent placeholder-secondary"
-                    placeholder="Search..."
-                    type="text"
-                    name="q"
-                  />
-                </form>
-              </div>
-            </div>
-          </header>
-          <section class="trend-movies-container">
-            <span class="movie-name">2022</span>
-            <h2 class="text-white text-4xl pb-3 pt-px">The Last of Us</h2>
-            <div class="flex justify-between">
-              <!-- a trend movie -->
-              <div class="trend-movie-container">
-                <img
-                  src="../static/movie-cover/TLOU.jpg"
-                  alt="movie cover"
-                  class="trend-movie selected"
-                />
-              </div>
-              <!-- a trend movie -->
-              <div class="trend-movie-container">
-                <img
-                  src="../static/movie-cover/clash.jpg"
-                  alt="movie cover"
-                  class="trend-movie"
-                />
-              </div>
-              <!-- a trend movie -->
-              <div class="trend-movie-container">
-                <img
-                  src="../static/movie-cover/LOTR.jpg"
-                  alt="movie cover"
-                  class="trend-movie"
-                />
-              </div>
-              <!-- a trend movie -->
-              <div class="trend-movie-container">
-                <img
-                  src="../static/movie-cover/joker_full.avif"
-                  alt="movie cover"
-                  class="trend-movie"
-                />
-              </div>
-            </div>
-          </section>
-        </div>
-        <!-- new movie container -->
-      </section>
-
       <!-- mobile search container -->
-      <section
-        class="mobile-search-bar content flex justify-center sm:hidden p-8"
-      >
+      <section class="mobile-search-bar content flex justify-center p-8">
         <div class="search-container flex items-center gap-3 justify-end mt-6">
-          <div class="phone-icon-menu-container">
+          <div class="phone-icon-menu-container block sm:hidden">
             <img
               id="open-menu-btn"
               class="rotate-0 w-10 h-10"
@@ -256,198 +175,13 @@
           </div>
         </div>
       </section>
-
-      <!-- new movies container -->
+      <!-- resault movies container -->
       <section class="movie-poster-container p-8">
         <div class="flex justify-between mb-3 items-center">
-          <h2 class="text-white text-lg">New Movies</h2>
-          <a href="#" class="text-primary text-sm">See all</a>
+          <h2 class="text-white text-lg">search resault</h2>
         </div>
         <div class="flex flex-wrap justify-between">
-          <!-- new movies container  -->
-          <div>
-            <a class="thumbnail-image relative">
-              <img
-                src="../static/movie-cover/joker_full.avif"
-                alt="movie poster"
-                class="movie-poster"
-              />
-              <div
-                class="overlay-desc absolute top-0 left-0 rounded-2xl w-full h-full p-3 flex justify-end flex-col gap-1 transition-all opacity-0"
-              >
-                <div class="scores">
-                  <div
-                    class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
-                  >
-                    <img
-                      src="../static/imdb.png"
-                      alt="imdb icon"
-                      class="w-6 inline-block rounded-md"
-                    />
-                    <span>10</span>
-                  </div>
-                </div>
-                <div class="genre">dark</div>
-                <div class="more-infos">2020 - America</div>
-              </div>
-            </a>
-            <h3 class="text-white ml-1">Joker</h3>
-          </div>
-          <!-- new movies container  -->
-          <div>
-            <a class="thumbnail-image relative">
-              <img
-                src="../static/movie-cover/blacklist.jpg"
-                alt="movie poster"
-                class="movie-poster"
-              />
-              <div
-                class="overlay-desc absolute top-0 left-0 rounded-2xl w-full h-full p-3 flex justify-end flex-col gap-1 transition-all opacity-0"
-              >
-                <div class="scores">
-                  <div
-                    class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
-                  >
-                    <img
-                      src="../static/imdb.png"
-                      alt="imdb icon"
-                      class="w-6 inline-block rounded-md"
-                    />
-                    <span>7.6</span>
-                  </div>
-                </div>
-                <div class="genre">Family - Business</div>
-                <div class="more-infos">2013 - America</div>
-              </div>
-            </a>
-            <h3 class="text-white ml-1">blacklist</h3>
-          </div>
-          <!-- new movies container  -->
-          <div>
-            <a class="thumbnail-image relative">
-              <img
-                src="../static/movie-cover/john_wick3.jpg"
-                alt="movie poster"
-                class="movie-poster"
-              />
-              <div
-                class="overlay-desc absolute top-0 left-0 rounded-2xl w-full h-full p-3 flex justify-end flex-col gap-1 transition-all opacity-0"
-              >
-                <div class="scores">
-                  <div
-                    class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
-                  >
-                    <img
-                      src="../static/imdb.png"
-                      alt="imdb icon"
-                      class="w-6 inline-block rounded-md"
-                    />
-                    <span>7.8</span>
-                  </div>
-                </div>
-                <div class="genre">Action</div>
-                <div class="more-infos">2019 - America</div>
-              </div>
-            </a>
-            <h3 class="text-white ml-1">John Wick</h3>
-          </div>
-          <!-- new movies container  -->
-          <div>
-            <a class="thumbnail-image relative">
-              <img
-                src="../static/movie-cover/mag-eleph.jpg"
-                alt="movie poster"
-                class="movie-poster"
-              />
-              <div
-                class="overlay-desc absolute top-0 left-0 rounded-2xl w-full h-full p-3 flex justify-end flex-col gap-1 transition-all opacity-0"
-              >
-                <div class="scores">
-                  <div
-                    class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
-                  >
-                    <img
-                      src="../static/imdb.png"
-                      alt="imdb icon"
-                      class="w-6 inline-block rounded-md"
-                    />
-                    <span>6.2</span>
-                  </div>
-                </div>
-                <div class="genre">Comedy</div>
-                <div class="more-infos">2019 - America</div>
-              </div>
-            </a>
-            <h3 class="text-white ml-1">Mag eleph</h3>
-          </div>
-          <!-- new movies container  -->
-          <div>
-            <a class="thumbnail-image relative">
-              <img
-                src="../static/movie-cover/noise.jpg"
-                alt="movie poster"
-                class="movie-poster"
-              />
-              <div
-                class="overlay-desc absolute top-0 left-0 rounded-2xl w-full h-full p-3 flex justify-end flex-col gap-1 transition-all opacity-0"
-              >
-                <div class="scores">
-                  <div
-                    class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
-                  >
-                    <img
-                      src="../static/imdb.png"
-                      alt="imdb icon"
-                      class="w-6 inline-block rounded-md"
-                    />
-                    <span>6.2</span>
-                  </div>
-                </div>
-                <div class="genre">Action</div>
-                <div class="more-infos">2023 - America</div>
-              </div>
-            </a>
-            <h3 class="text-white ml-1">Noise</h3>
-          </div>
-          <!-- new movies container  -->
-          <div>
-            <a class="thumbnail-image relative">
-              <img
-                src="../static/movie-cover/boston.jpg"
-                alt="movie poster"
-                class="movie-poster"
-              />
-              <div
-                class="overlay-desc absolute top-0 left-0 rounded-2xl w-full h-full p-3 flex justify-end flex-col gap-1 transition-all opacity-0"
-              >
-                <div class="scores">
-                  <div
-                    class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
-                  >
-                    <img
-                      src="../static/imdb.png"
-                      alt="imdb icon"
-                      class="w-6 inline-block rounded-md"
-                    />
-                    <span>9.1</span>
-                  </div>
-                </div>
-                <div class="genre">Action</div>
-                <div class="more-infos">2023 - America</div>
-              </div>
-            </a>
-            <h3 class="text-white ml-1">Boston Strangler</h3>
-          </div>
-        </div>
-      </section>
-      <!-- For You container -->
-      <section class="movie-poster-container p-8">
-        <div class="flex justify-between mb-3 items-center">
-          <h2 class="text-white text-lg">For you</h2>
-          <a href="#" class="text-primary text-sm">See all</a>
-        </div>
-        <div class="flex flex-wrap justify-between">
-          <!-- new movies container  -->
+          <!-- resault movies container  -->
           <div>
             <a class="thumbnail-image relative">
               <img
