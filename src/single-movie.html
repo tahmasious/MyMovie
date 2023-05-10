@@ -25,7 +25,15 @@
     <title>Stranger things | My movie.</title>
   </head>
   <body class="flex">
-    <nav class="navbar w-[20%] h-auto pb-4">
+    <nav class="navbar w-[20%] h-auto pb-4 hidden sm:block">
+      <div class="flex justify-end p-8 sm:hidden">
+        <img
+          id="close-menu-btn"
+          src="../static/plus.png"
+          class="w-7 h-7 rotate-45"
+          alt="close-btn"
+        />
+      </div>
       <div class="sticky top-0">
         <!-- logo -->
         <div class="logo-container mb-4">
@@ -139,6 +147,14 @@
     <main class="w-[100%]">
       <!-- content section -->
       <section class="content relative h-[33rem]">
+        <div class="phone-icon-menu-container sm:hidden block mb-2">
+          <img
+            id="open-menu-btn"
+            class="rotate-0 w-10 h-10"
+            src="../static/menu.png"
+            alt="menu icon"
+          />
+        </div>
         <!-- movie to be in background -->
         <img
           src="../static/movie-snapshot/stranger-things.jpg"
@@ -149,7 +165,7 @@
           class="video-overlay absolute top-0 left-0 w-full p-16 pb-0 h-[30rem] flex flex-col justify-between"
         >
           <!-- header (searchbar) -->
-          <header class="relative flex justify-between items-center">
+          <header class="relative sm:flex hidden justify-between items-center">
             <a
               href="#"
               class="glss-bg w-8 h-8 flex justify-center items-center border-[1.5px] border-secondary rounded-[20px]"
@@ -181,7 +197,9 @@
             </div>
           </header>
           <section class="single-movie-container">
-            <div class="flex justify-between items-center">
+            <div
+              class="flex justify-between sm:flex-row flex-col sm:items-center items-start"
+            >
               <div>
                 <span class="movie-directors text-white font-bold"
                   >Shawn Levy, Matt Duffer, Ross Duffer</span
@@ -207,7 +225,7 @@
                 />
               </a>
             </div>
-            <div class="flex justify-between gap-2">
+            <div class="flex justify-between sm:flex-row flex-col gap-2">
               <a href="#" class="info-item play-btn bg-primary">
                 <img
                   src="../static/play-btn.png"
@@ -217,7 +235,7 @@
               </a>
               <!-- info container -->
               <div
-                class="info-item glss-bg flex justify-center items-center relative"
+                class="info-item glss-bg justify-center items-center relative sm:flex hidden"
               >
                 <div class="info-title font-bold absolute left-0">
                   <span class="text-secondary inline-block rotate-[-90deg]"
@@ -230,7 +248,7 @@
               </div>
               <!-- info container -->
               <div
-                class="info-item glss-bg flex justify-center items-center relative"
+                class="info-item glss-bg justify-center items-center relative sm:flex hidden"
               >
                 <div class="info-title font-bold absolute left-0">
                   <span class="text-secondary inline-block rotate-[-90deg]"
@@ -243,7 +261,7 @@
               </div>
               <!-- info container -->
               <div
-                class="info-item glss-bg flex justify-center items-center relative"
+                class="info-item glss-bg justify-center items-center relative sm:flex hidden"
               >
                 <div class="info-title font-bold absolute left-0">
                   <span class="text-secondary inline-block rotate-[-90deg]"
@@ -259,6 +277,17 @@
         </div>
       </section>
       <div class="p-16 pt-0">
+        <section class="mobile-info-container text-white mb-5 sm:hidden block">
+          <div>
+            <span>length : 120min</span>
+          </div>
+          <div>
+            <span>Release : 2014</span>
+          </div>
+          <div>
+            <span>Budget : $140M</span>
+          </div>
+        </section>
         <section class="description mb-6">
           <h2 class="text-secondary mb-2">DESCRIPTION</h2>
           <p class="text-white">
@@ -306,7 +335,7 @@
             <h2 class="text-secondary mb-2">SIMILAR MOVIES</h2>
             <a href="#" class="text-primary text-sm">See all</a>
           </div>
-          <div class="flex justify-between">
+          <div class="flex justify-between flex-wrap">
             <!-- new movies container  -->
             <div>
               <a class="thumbnail-image relative">
@@ -485,7 +514,7 @@
         </section>
       </div>
     </main>
-    <aside class="w-[25%] pt-16">
+    <aside class="w-[25%] pt-16 hidden sm:block">
       <!-- online friends bar -->
       <section class="flex flex-col gap-8 sticky top-20">
         <a
@@ -646,4 +675,5 @@
       </section>
     </aside>
   </body>
+  <script src="./script.js"></script>
 </html>
