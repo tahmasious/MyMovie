@@ -145,38 +145,6 @@
     </nav>
     <!-- main content (middle section) -->
     <main class="w-[100%]">
-      <section
-        class="mobile-search-bar content flex justify-center sm:hidden block"
-      >
-        <div class="search-container flex items-center gap-3 justify-end mt-6">
-          <div class="phone-icon-menu-container">
-            <img
-              id="open-menu-btn"
-              class="rotate-0 w-10 h-10"
-              src="../static/menu.png"
-              alt="menu icon"
-            />
-          </div>
-          <div
-            class="searchbar border-[1.5px] border-secondary rounded-[20px] flex items-center p-2 text-secondary"
-          >
-            <img
-              class="w-7 inline"
-              src="../static/search.png"
-              alt="search icon"
-            />
-            <form class="inline" action="#">
-              <input
-                class="inline bg-transparent placeholder-secondary"
-                placeholder="Search..."
-                type="text"
-                name="q"
-              />
-            </form>
-          </div>
-        </div>
-      </section>
-
       <!-- content section -->
       <section class="content relative h-[33rem] sm:block hidden">
         <!-- movie to be in background -->
@@ -255,6 +223,40 @@
         </div>
         <!-- new movie container -->
       </section>
+
+      <!-- mobile search container -->
+      <section
+        class="mobile-search-bar content flex justify-center sm:hidden p-8"
+      >
+        <div class="search-container flex items-center gap-3 justify-end mt-6">
+          <div class="phone-icon-menu-container">
+            <img
+              id="open-menu-btn"
+              class="rotate-0 w-10 h-10"
+              src="../static/menu.png"
+              alt="menu icon"
+            />
+          </div>
+          <div
+            class="searchbar border-[1.5px] border-secondary rounded-[20px] flex items-center p-2 text-secondary"
+          >
+            <img
+              class="w-7 inline"
+              src="../static/search.png"
+              alt="search icon"
+            />
+            <form class="inline" action="#">
+              <input
+                class="inline bg-transparent placeholder-secondary"
+                placeholder="Search..."
+                type="text"
+                name="q"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+
       <!-- new movies container -->
       <section class="movie-poster-container p-8">
         <div class="flex justify-between mb-3 items-center">
