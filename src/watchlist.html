@@ -25,7 +25,15 @@
     <title>Watchlist | My movie.</title>
   </head>
   <body class="flex">
-    <nav class="navbar w-[20%] h-auto pb-4">
+    <nav class="navbar w-[20%] h-auto pb-4 sm:block hidden">
+      <div class="flex justify-end p-8 sm:hidden">
+        <img
+          id="close-menu-btn"
+          src="../static/plus.png"
+          class="w-7 h-7 rotate-45"
+          alt="close-btn"
+        />
+      </div>
       <div class="sticky top-0">
         <!-- logo -->
         <div class="logo-container mb-4">
@@ -137,9 +145,17 @@
     </nav>
     <!-- main content (middle section) -->
     <main class="w-[100%] p-8">
+      <div class="phone-icon-menu-container sm:hidden block mb-3">
+        <img
+          id="open-menu-btn"
+          class="rotate-0 w-10 h-10"
+          src="../static/menu.png"
+          alt="menu icon"
+        />
+      </div>
       <section>
         <h2 class="text-white mb-3 text-lg">Watchlist</h2>
-        <div class="row flex gap-3">
+        <div class="row flex flex-wrap gap-3">
           <div
             class="watchlist-card bg-cover p-4 w-full rounded-xl"
             style="
@@ -236,7 +252,7 @@
         </div>
       </section>
     </main>
-    <aside class="w-[25%] pt-16">
+    <aside class="w-[25%] pt-16 sm:block hidden">
       <!-- online friends bar -->
       <section class="flex flex-col gap-8 sticky top-20">
         <a
@@ -397,4 +413,5 @@
       </section>
     </aside>
   </body>
+  <script src="./script.js"></script>
 </html>

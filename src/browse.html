@@ -25,7 +25,15 @@
     <title>Browse | My movie.</title>
   </head>
   <body class="flex">
-    <nav class="navbar w-[20%] h-auto pb-4">
+    <nav class="navbar w-[20%] h-auto pb-4 hidden sm:block">
+      <div class="flex justify-end p-8 sm:hidden">
+        <img
+          id="close-menu-btn"
+          src="../static/plus.png"
+          class="w-7 h-7 rotate-45"
+          alt="close-btn"
+        />
+      </div>
       <div class="sticky top-0">
         <!-- logo -->
         <div class="logo-container mb-4">
@@ -137,8 +145,38 @@
     </nav>
     <!-- main content (middle section) -->
     <main class="w-[100%]">
+      <section class="mobile-search-bar content flex justify-center">
+        <div class="search-container flex items-center gap-3 justify-end mt-6">
+          <div class="phone-icon-menu-container sm:hidden block">
+            <img
+              id="open-menu-btn"
+              class="rotate-0 w-10 h-10"
+              src="../static/menu.png"
+              alt="menu icon"
+            />
+          </div>
+          <div
+            class="searchbar border-[1.5px] border-secondary rounded-[20px] flex items-center p-2 text-secondary"
+          >
+            <img
+              class="w-7 inline"
+              src="../static/search.png"
+              alt="search icon"
+            />
+            <form class="inline" action="#">
+              <input
+                class="inline bg-transparent placeholder-secondary"
+                placeholder="Search..."
+                type="text"
+                name="q"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+
       <!-- content section -->
-      <section class="content relative h-[33rem]">
+      <section class="content relative h-[33rem] sm:block hidden">
         <!-- movie to be in background -->
         <video
           autoplay
@@ -221,7 +259,7 @@
           <h2 class="text-white text-lg">New Movies</h2>
           <a href="#" class="text-primary text-sm">See all</a>
         </div>
-        <div class="flex justify-between">
+        <div class="flex flex-wrap justify-between">
           <!-- new movies container  -->
           <div>
             <a class="thumbnail-image relative">
@@ -404,7 +442,7 @@
           <h2 class="text-white text-lg">For you</h2>
           <a href="#" class="text-primary text-sm">See all</a>
         </div>
-        <div class="flex justify-between">
+        <div class="flex flex-wrap justify-between">
           <!-- new movies container  -->
           <div>
             <a class="thumbnail-image relative">
@@ -582,7 +620,7 @@
         </div>
       </section>
     </main>
-    <aside class="w-[25%] pt-16">
+    <aside class="w-[25%] pt-16 hidden sm:block">
       <!-- online friends bar -->
       <section class="flex flex-col gap-8 sticky top-20">
         <a
@@ -743,4 +781,5 @@
       </section>
     </aside>
   </body>
+  <script src="./script.js"></script>
 </html>

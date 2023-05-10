@@ -10,7 +10,7 @@
     @apply pl-9 text-sm mb-5 text-secondary ml-[3px];
   }
   .party-container {
-    @apply rounded-2xl bg-[#1E1F26] p-5 w-[24%] shadow-none shadow-black hover:shadow-2xl hover:bg-[#282a33] hover:w-[26%] transition-all;
+    @apply rounded-2xl bg-[#1E1F26] p-5 sm:w-56 w-full shadow-none shadow-black hover:shadow-2xl hover:bg-[#282a33] hover:w-[100%] sm:hover:w-[26%] transition-all;
   }
   .trend-movie {
     @apply rounded-2xl mb-[-50px] border-[3px] border-transparent transition-all  w-[150px] h-[220px];

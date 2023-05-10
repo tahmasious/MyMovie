@@ -25,7 +25,15 @@
     <title>Home | My movie.</title>
   </head>
   <body class="bg-slate-500 flex">
-    <nav class="navbar w-[20%] h-auto pb-4">
+    <nav class="navbar w-[20%] h-auto pb-4 hidden sm:block">
+      <div class="flex justify-end p-8 sm:hidden">
+        <img
+          id="close-menu-btn"
+          src="../static/plus.png"
+          class="w-7 h-7 rotate-45"
+          alt="close-btn"
+        />
+      </div>
       <div class="sticky top-0">
         <!-- logo -->
         <div class="logo-container mb-4">
@@ -138,8 +146,16 @@
     <!-- main content (middle section) -->
     <main class="w-[100%] p-8">
       <!-- header (searchbar + profile container) -->
-      <header class="flex items-center justify-between">
-        <div class="search-container inline-flex items-center gap-3">
+      <header class="flex items-center justify-start sm:justify-between">
+        <div class="phone-icon-menu-container sm:hidden block">
+          <img
+            id="open-menu-btn"
+            class="rotate-0 w-10 h-10"
+            src="../static/menu.png"
+            alt="menu icon"
+          />
+        </div>
+        <div class="search-container items-center gap-3 hidden sm:inline-flex">
           <a href="#" class="inline-flex items-center gap-3">
             <img
               class="rotate-180 inline w-4"
@@ -170,7 +186,7 @@
             </form>
           </div>
         </div>
-        <div class="profile-container gap-5 inline-flex items-center">
+        <div class="profile-container gap-5 hidden sm:inline-flex items-center">
           <div class="inline notification">
             <a href="#">
               <!-- <strong class="text-[35px] text-primary">.</strong> -->
@@ -276,7 +292,9 @@
             <a href="#" class="text-primary text-sm">See all</a>
           </div>
           <!-- row of parties -->
-          <div class="flex gap-[15px]">
+          <div
+            class="flex flex-wrap justify-center sm:justify-around gap-[15px]"
+          >
             <!-- a party -->
             <div class="party-container">
               <div class="party-images-container flex justify-between mb-4">
@@ -423,9 +441,11 @@
         <section class="mb-7">
           <h2 class="text-white mb-3 text-lg">Continue watching</h2>
           <!-- row of cont. watching -->
-          <div class="flex gap-[15px]">
+          <div
+            class="flex flex-wrap justify-center sm:justify-around gap-[15px]"
+          >
             <!-- a movie -->
-            <div class="movie-cont-watch-container w-[24%]">
+            <div class="movie-cont-watch-container w-56">
               <img
                 class="overflow-hidden rounded-t-2xl object-cover h-[160px]"
                 src="../static/movie-snapshot/stranger-things.jpg"
@@ -441,7 +461,7 @@
               </div>
             </div>
             <!-- another movie -->
-            <div class="movie-cont-watch-container w-[24%]">
+            <div class="movie-cont-watch-container w-56">
               <img
                 class="overflow-hidden rounded-t-2xl object-cover h-[160px]"
                 src="../static/movie-snapshot/la-haine.jpg"
@@ -457,7 +477,7 @@
               </div>
             </div>
             <!-- movie, yes a movie -->
-            <div class="movie-cont-watch-container w-[24%]">
+            <div class="movie-cont-watch-container w-56">
               <img
                 class="overflow-hidden rounded-t-2xl object-cover h-[160px]"
                 src="../static/movie-snapshot/12-angry-man.webp"
@@ -473,7 +493,7 @@
               </div>
             </div>
             <!-- movie -->
-            <div class="movie-cont-watch-container w-[24%]">
+            <div class="movie-cont-watch-container w-56">
               <img
                 class="overflow-hidden rounded-t-2xl object-cover h-[160px]"
                 src="../static/movie-snapshot/project-x.jpg"
@@ -492,7 +512,7 @@
         </section>
       </section>
     </main>
-    <aside class="w-[25%] pt-16">
+    <aside class="w-[25%] pt-16 hidden sm:block">
       <!-- online friends bar -->
       <section class="flex flex-col gap-8 sticky top-20">
         <a
@@ -653,4 +673,5 @@
       </section>
     </aside>
   </body>
+  <script src="./script.js"></script>
 </html>
