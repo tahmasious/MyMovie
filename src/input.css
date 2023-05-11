@@ -29,7 +29,7 @@
     @apply bg-primary;
   }
   .party-avatar-container img {
-    @apply .transition-all;
+    @apply transition-all;
   }
   .party-avatar-container:hover img {
     @apply rounded-2xl;
@@ -53,6 +53,9 @@
   }
   .others-message span {
     @apply bg-[#333A43] rounded-tl-sm;
+  }
+  .friend-card-container {
+    @apply flex flex-col justify-between items-center w-[150px] h-[150px] bg-[#25242E] p-3 gap-2 rounded-xl m-3 ml-0;
   }
 }
 

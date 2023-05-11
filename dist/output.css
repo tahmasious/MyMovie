@@ -644,12 +644,9 @@ img.movie-poster {
 }
 
 .party-avatar-container img {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-duration: 150ms;
-  transition-delay: 75ms;
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .party-avatar-container:hover img {
@@ -687,6 +684,22 @@ img.movie-poster {
   border-top-left-radius: 0.125rem;
   --tw-bg-opacity: 1;
   background-color: rgb(51 58 67 / var(--tw-bg-opacity));
+}
+
+.friend-card-container {
+  margin: 0.75rem;
+  margin-left: 0px;
+  display: flex;
+  height: 150px;
+  width: 150px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 36 46 / var(--tw-bg-opacity));
+  padding: 0.75rem;
 }
 
 .absolute {
@@ -885,6 +898,10 @@ img.movie-poster {
   height: 2.5rem;
 }
 
+.h-11 {
+  height: 2.75rem;
+}
+
 .h-12 {
   height: 3rem;
 }
@@ -899,6 +916,10 @@ img.movie-poster {
 
 .h-4 {
   height: 1rem;
+}
+
+.h-44 {
+  height: 11rem;
 }
 
 .h-6 {
@@ -947,6 +968,10 @@ img.movie-poster {
 
 .h-\[40px\] {
   height: 40px;
+}
+
+.h-\[50px\] {
+  height: 50px;
 }
 
 .h-\[55px\] {
@@ -1041,6 +1066,10 @@ img.movie-poster {
   width: 48%;
 }
 
+.w-\[50px\] {
+  width: 50px;
+}
+
 .w-\[55\%\] {
   width: 55%;
 }
@@ -1051,6 +1080,10 @@ img.movie-poster {
 
 .w-\[67\%\] {
   width: 67%;
+}
+
+.w-\[75\%\] {
+  width: 75%;
 }
 
 .w-\[80\%\] {
@@ -1108,6 +1141,10 @@ img.movie-poster {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
 }
 
 .content-center {
@@ -1192,6 +1229,10 @@ img.movie-poster {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .rounded-md {
@@ -1364,6 +1405,10 @@ img.movie-poster {
   padding: 2rem;
 }
 
+.p-0 {
+  padding: 0px;
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -1427,6 +1472,10 @@ img.movie-poster {
 
 .pl-1 {
   padding-left: 0.25rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
 }
 
 .pl-4 {
@@ -1642,6 +1691,10 @@ main {
     width: 300px;
   }
 
+  .sm\:w-\[20\%\] {
+    width: 20%;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -1660,6 +1713,11 @@ main {
 
   .sm\:justify-around {
     justify-content: space-around;
+  }
+
+  .sm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .sm\:text-4xl {
