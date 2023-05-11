@@ -21,6 +21,39 @@
   .info-item {
     @apply rounded-2xl py-7 w-full;
   }
+  .selected-group img {
+    @apply rounded-2xl;
+  }
+
+  .selected-group div {
+    @apply bg-primary;
+  }
+  .party-avatar-container img {
+    @apply .transition-all;
+  }
+  .party-avatar-container:hover img {
+    @apply rounded-2xl;
+  }
+  .message {
+    @apply flex p-2;
+  }
+  .message span {
+    @apply text-white inline p-2 rounded-xl;
+  }
+
+  .my-message {
+    @apply justify-end;
+  }
+  .my-message span {
+    @apply bg-primary rounded-tr-sm;
+  }
+
+  .others-message {
+    @apply justify-start;
+  }
+  .others-message span {
+    @apply bg-[#333A43] rounded-tl-sm;
+  }
 }
 
 body {

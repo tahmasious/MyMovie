@@ -1,0 +1,6 @@
+.suggestion-box .background-image {
+  background-image: url("../static/movie-snapshot/blade-runner.jpg");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
