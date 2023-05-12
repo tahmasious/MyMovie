@@ -766,6 +766,10 @@ img.movie-poster {
   margin: auto;
 }
 
+.m-3 {
+  margin: 0.75rem;
+}
+
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -784,6 +788,11 @@ img.movie-poster {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .mb-0 {
@@ -906,6 +915,10 @@ img.movie-poster {
   height: 3rem;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .h-2 {
   height: 0.5rem;
 }
@@ -990,6 +1003,14 @@ img.movie-poster {
   height: 1px;
 }
 
+.h-24 {
+  height: 6rem;
+}
+
+.h-28 {
+  height: 7rem;
+}
+
 .w-1 {
   width: 0.25rem;
 }
@@ -1000,6 +1021,10 @@ img.movie-poster {
 
 .w-12 {
   width: 3rem;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .w-3 {
@@ -1106,8 +1131,36 @@ img.movie-poster {
   width: 1px;
 }
 
+.w-24 {
+  width: 6rem;
+}
+
+.w-28 {
+  width: 7rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-72 {
+  width: 18rem;
+}
+
 .max-w-sm {
   max-width: 24rem;
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
 }
 
 .rotate-0 {
@@ -1141,10 +1194,6 @@ img.movie-poster {
 
 .flex-wrap {
   flex-wrap: wrap;
-}
-
-.flex-nowrap {
-  flex-wrap: nowrap;
 }
 
 .content-center {
@@ -1231,10 +1280,6 @@ img.movie-poster {
   border-radius: 9999px;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
 .rounded-md {
   border-radius: 0.375rem;
 }
@@ -1295,6 +1340,11 @@ img.movie-poster {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-\[\#494B57\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(73 75 87 / var(--tw-border-opacity));
 }
 
 .bg-\[\#131519\] {
@@ -1369,6 +1419,10 @@ img.movie-poster {
      object-fit: cover;
 }
 
+.p-0 {
+  padding: 0px;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -1405,8 +1459,12 @@ img.movie-poster {
   padding: 2rem;
 }
 
-.p-0 {
-  padding: 0px;
+.p-7 {
+  padding: 1.75rem;
+}
+
+.p-12 {
+  padding: 3rem;
 }
 
 .px-1 {
@@ -1452,6 +1510,11 @@ img.movie-poster {
 .py-\[10px\] {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pb-0 {
@@ -1689,10 +1752,6 @@ main {
 
   .sm\:w-\[300px\] {
     width: 300px;
-  }
-
-  .sm\:w-\[20\%\] {
-    width: 20%;
   }
 
   .sm\:flex-row {
