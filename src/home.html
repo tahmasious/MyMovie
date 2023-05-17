@@ -187,27 +187,7 @@
           </div>
         </div>
         <div class="profile-container gap-5 hidden sm:inline-flex items-center">
-          <div class="inline notification">
-            <a href="#">
-              <!-- <strong class="text-[35px] text-primary">.</strong> -->
-              <img
-                class="inline w-6"
-                src="../static/notification.png"
-                alt="notification icon"
-              />
-            </a>
-          </div>
-          <div class="message inline">
-            <a href="#">
-              <!-- <strong class="text-[35px] text-primary">.</strong> -->
-              <img
-                class="inline w-6"
-                src="../static/message.png"
-                alt="message icon"
-              />
-            </a>
-          </div>
-          <div class="profile inline-flex">
+          <div class="profile inline-flex items-center">
             <div
               class="inline-block avatar-contaier p-1 border-[2.5px] border-primary rounded-full"
             >
@@ -221,7 +201,6 @@
             </div>
             <div class="username-container p-2">
               <span class="text-white">Tahmasious</span><br />
-              <span class="text-[14px] text-secondary">Level 12</span>
             </div>
           </div>
         </div>
@@ -236,30 +215,8 @@
               class="background-image rounded-3xl absolute left-0 top-0 w-full h-full z-10"
             ></div>
             <div
-              class="content z-20 absolute left-0 flex bottom-0 h-full w-full flex-col justify-between p-10"
+              class="content z-20 absolute left-0 flex bottom-0 h-full w-full flex-col justify-end p-10"
             >
-              <div class="common-watchers-container">
-                <img
-                  src="../static/friend-avatars/1.jpg"
-                  class="w-6 h-6 rounded-full inline-block"
-                  alt="common friend avatar"
-                />
-
-                <img
-                  src="../static/friend-avatars/2.jpg"
-                  class="w-6 h-6 rounded-full inline-block relative left-[-10px]"
-                  alt="common friend avatar"
-                />
-
-                <img
-                  src="../static/friend-avatars/3.jpg"
-                  class="w-6 h-6 rounded-full inline-block relative left-[-20px]"
-                  alt="common friend avatar"
-                />
-                <span class="text-white text-sm relative left-[-20px]"
-                  >+5 friends are watching</span
-                >
-              </div>
               <div class="movie-title-container">
                 <h3 class="movie-title text-white text-5xl">Amelie</h3>
                 <h4 class="mb-7 text-gray-300">naive girl in Paris</h4>
@@ -267,7 +224,7 @@
                   <a
                     href="#"
                     class="bg-primary rounded-xl py-3 px-4 inline-block text-white shadow-lg shadow-primary-dark text-sm"
-                    >Watch</a
+                    >More Detail</a
                   >
                   <a
                     href="#"
@@ -284,392 +241,484 @@
             </div>
           </div>
         </section>
-        <!-- parties section -->
-        <section class="mb-7">
+        <!-- trailers -->
+        <section class="mb-14">
           <!-- section title and see all container -->
-          <div class="flex justify-between mb-3 items-center">
-            <h2 class="text-white text-lg">Parties</h2>
-            <a href="#" class="text-primary text-sm">See all</a>
+          <div class="flex justify-start items-center mb-3">
+            <h2 class="text-white text-lg">New trailers</h2>
           </div>
-          <!-- row of parties -->
+          <div
+            class="selector-container mb-3 text-secondary flex justify-start gap-4"
+          >
+            <span class="active-selector">Streaming</span>
+            <span>On TV</span>
+            <span>For Rent</span>
+            <span>In theaters</span>
+          </div>
+          <!-- row of trailers -->
           <div
             class="flex flex-wrap justify-center sm:justify-around gap-[15px]"
           >
-            <!-- a party -->
-            <a class="party-container" href="./party-retrieve.html">
-              <div class="party-images-container flex justify-between mb-4">
-                <div class="party-avatar-container">
-                  <img
-                    src="../static/party-avatars/1.png"
-                    alt="party avatar"
-                    class="h-10 w-10 rounded-2xl"
-                  />
-                </div>
-                <div class="party-memeber-avatar-container">
-                  <img
-                    src="../static/friend-avatars/1.jpg"
-                    class="w-6 h-6 rounded-full inline-block relative right-[-20px]"
-                    alt="common friend avatar"
-                  />
-
-                  <img
-                    src="../static/friend-avatars/2.jpg"
-                    class="w-6 h-6 rounded-full inline-block relative right-[-10px]"
-                    alt="common friend avatar"
-                  />
-
-                  <img
-                    src="../static/friend-avatars/3.jpg"
-                    class="w-6 h-6 rounded-full inline-block relative"
-                    alt="common friend avatar"
-                  />
+            <!-- a trailer -->
+            <div class="trailer-container">
+              <div
+                class="bg-[url('../static/trailer-cover/1.jpg')] h-40 w-[23%] min-w-[14rem] bg-center bg-cover rounded-2xl overflow-hidden"
+              >
+                <div
+                  class="overlay bg-slate-800 bg-opacity-60 w-full h-full p-4 text-white flex flex-col justify-center"
+                >
+                  <div class="flex justify-center">
+                    <div
+                      class="bg-slate-200 bg-opacity-20 inline-block p-3 rounded-full"
+                    >
+                      <img
+                        src="../static/play-btn.png"
+                        alt="play btn"
+                        class="w-6 h-6"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="party-title-container">
-                <h3 class="text-white">Void lovers</h3>
-                <span class="text-secondary">Yes! we love nothing.</span>
-              </div>
-            </a>
-            <!-- another party -->
-            <div class="party-container">
-              <div class="party-images-container flex justify-between mb-4">
-                <div class="party-avatar-container">
-                  <img
-                    src="../static/party-avatars/2.jpg"
-                    alt="party avatar"
-                    class="h-10 w-10 rounded-2xl"
-                  />
-                </div>
-                <div class="party-memeber-avatar-container">
-                  <img
-                    src="../static/friend-avatars/1.jpg"
-                    class="w-6 h-6 rounded-full inline-block relative right-[-20px]"
-                    alt="common friend avatar"
-                  />
-
-                  <img
-                    src="../static/friend-avatars/2.jpg"
-                    class="w-6 h-6 rounded-full inline-block relative right-[-10px]"
-                    alt="common friend avatar"
-                  />
-
-                  <img
-                    src="../static/friend-avatars/3.jpg"
-                    class="w-6 h-6 rounded-full inline-block relative"
-                    alt="common friend avatar"
-                  />
-                </div>
-              </div>
-              <div class="party-title-container">
-                <h3 class="text-white">So, what ?</h3>
-                <span class="text-secondary">search for answer</span>
-              </div>
+              <div class="pt-2 text-white">Outlander</div>
             </div>
-            <!-- again, a fucking party -->
-            <div class="party-container">
-              <div class="party-images-container flex justify-between mb-4">
-                <div class="party-avatar-container">
-                  <img
-                    src="../static/party-avatars/3.jpg"
-                    alt="party avatar"
-                    class="h-10 w-10 rounded-2xl"
-                  />
-                </div>
-                <div class="party-memeber-avatar-container">
-                  <img
-                    src="../static/friend-avatars/1.jpg"
-                    class="w-6 h-6 rounded-full inline-block relative right-[-20px]"
-                    alt="common friend avatar"
-                  />
-
-                  <img
-                    src="../static/friend-avatars/2.jpg"
-                    class="w-6 h-6 rounded-full inline-block relative right-[-10px]"
-                    alt="common friend avatar"
-                  />
-
-                  <img
-                    src="../static/friend-avatars/3.jpg"
-                    class="w-6 h-6 rounded-full inline-block relative"
-                    alt="common friend avatar"
-                  />
+            <!-- a trending movie -->
+            <div class="trailer-container">
+              <div
+                class="bg-[url('../static/trailer-cover/2.jpg')] h-40 w-[23%] min-w-[14rem] bg-center bg-cover rounded-2xl overflow-hidden"
+              >
+                <div
+                  class="overlay bg-slate-800 bg-opacity-60 w-full h-full p-4 text-white flex flex-col justify-center"
+                >
+                  <div class="flex justify-center">
+                    <div
+                      class="bg-slate-200 bg-opacity-20 inline-block p-3 rounded-full"
+                    >
+                      <img
+                        src="../static/play-btn.png"
+                        alt="play btn"
+                        class="w-6 h-6"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="party-title-container">
-                <h3 class="text-white">soul hunter</h3>
-                <span class="text-secondary">we hunt souls.</span>
-              </div>
+              <div class="pt-2 text-white">Old friend</div>
             </div>
-            <!-- god damn it -->
-            <div class="party-container">
-              <div class="party-images-container flex justify-between mb-4">
-                <div class="party-avatar-container">
-                  <img
-                    src="../static/party-avatars/4.jpg"
-                    alt="party avatar"
-                    class="h-10 w-10 rounded-2xl"
-                  />
-                </div>
-                <div class="party-memeber-avatar-container">
-                  <img
-                    src="../static/friend-avatars/1.jpg"
-                    class="w-6 h-6 rounded-full inline-block relative right-[-20px]"
-                    alt="common friend avatar"
-                  />
-
-                  <img
-                    src="../static/friend-avatars/2.jpg"
-                    class="w-6 h-6 rounded-full inline-block relative right-[-10px]"
-                    alt="common friend avatar"
-                  />
-
-                  <img
-                    src="../static/friend-avatars/3.jpg"
-                    class="w-6 h-6 rounded-full inline-block relative"
-                    alt="common friend avatar"
-                  />
+            <!-- a trending movie -->
+            <div class="trailer-container">
+              <div
+                class="bg-[url('../static/trailer-cover/3.jpg')] h-40 w-[23%] min-w-[14rem] bg-center bg-cover rounded-2xl overflow-hidden"
+              >
+                <div
+                  class="overlay bg-slate-800 bg-opacity-60 w-full h-full p-4 text-white flex flex-col justify-center"
+                >
+                  <div class="flex justify-center">
+                    <div
+                      class="bg-slate-200 bg-opacity-20 inline-block p-3 rounded-full"
+                    >
+                      <img
+                        src="../static/play-btn.png"
+                        alt="play btn"
+                        class="w-6 h-6"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="party-title-container">
-                <h3 class="text-white">starving mouse</h3>
-                <span class="text-secondary">mouse is not a cat.</span>
+              <div class="pt-2 text-white">Clock</div>
+            </div>
+            <!-- a trending movie -->
+            <div class="trailer-container">
+              <div
+                class="bg-[url('../static/trailer-cover/4.jpg')] h-40 w-[23%] min-w-[14rem] bg-center bg-cover rounded-2xl overflow-hidden"
+              >
+                <div
+                  class="overlay bg-slate-800 bg-opacity-60 w-full h-full p-4 text-white flex flex-col justify-center"
+                >
+                  <div class="flex justify-center">
+                    <div
+                      class="bg-slate-200 bg-opacity-20 inline-block p-3 rounded-full"
+                    >
+                      <img
+                        src="../static/play-btn.png"
+                        alt="play btn"
+                        class="w-6 h-6"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
+              <div class="pt-2 text-white">Citadel</div>
             </div>
           </div>
         </section>
-        <!-- Continue watching -->
+        <!--  trending movies section -->
         <section class="mb-7">
-          <h2 class="text-white mb-3 text-lg">Continue watching</h2>
-          <!-- row of cont. watching -->
+          <!-- section title and see all container -->
+          <div class="flex justify-start mb-3 items-center">
+            <h2 class="text-white text-lg">Trending movies</h2>
+          </div>
+          <!-- row of trending movies -->
           <div
             class="flex flex-wrap justify-center sm:justify-around gap-[15px]"
           >
-            <!-- a movie -->
-            <div class="movie-cont-watch-container w-56">
-              <img
-                class="overflow-hidden rounded-t-2xl object-cover h-[160px]"
-                src="../static/movie-snapshot/stranger-things.jpg"
-                alt="movie snapshot"
-              />
-              <div class="watch-progress-container h-[3px] bg-secondary">
-                <div class="watch-progress h-[3px] bg-primary w-[67%]"></div>
-              </div>
+            <!-- a trending movie -->
+            <div
+              class="bg-[url('../static/movie-snapshot/blade-runner.jpg')] h-60 w-[23%] min-w-[14rem] bg-center bg-cover rounded-2xl overflow-hidden"
+            >
               <div
-                class="movie-cont-watch-title rounded-b-2xl bg-[#1E1F26] p-4"
+                class="overlay bg-slate-800 bg-opacity-60 w-full h-full p-4 text-white flex flex-col justify-between"
               >
-                <h3 class="text-white">Stranger things</h3>
+                <div>
+                  <div
+                    class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
+                  >
+                    <img
+                      src="../static/imdb.png"
+                      alt="imdb icon"
+                      class="w-6 inline-block rounded-md"
+                    />
+                    <span>8.3</span>
+                  </div>
+                </div>
+                <div class="movie-info">
+                  <h2>The blade runner</h2>
+                  <span class="text-[#CCCCCC]">2021</span>
+                  <div class="flex justify-between items-center">
+                    <a
+                      href="#"
+                      class="py-[5px] px-[7px] bg-primary rounded-xl shadow-lg shadow-primary-dark"
+                      >More Detail</a
+                    >
+                    <a
+                      href="#"
+                      class="text-white text-lg bg-[#ffffff5e] rounded-2xl py-[5px] px-[7px]"
+                    >
+                      <img
+                        src="../static/plus.png"
+                        alt="#"
+                        class="inline-block w-6 h-6"
+                      />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-            <!-- another movie -->
-            <div class="movie-cont-watch-container w-56">
-              <img
-                class="overflow-hidden rounded-t-2xl object-cover h-[160px]"
-                src="../static/movie-snapshot/la-haine.jpg"
-                alt="movie snapshot"
-              />
-              <div class="watch-progress-container h-[3px] bg-secondary">
-                <div class="watch-progress h-[3px] bg-primary w-[55%]"></div>
-              </div>
+            <!-- a trending movie -->
+            <div
+              class="bg-[url('../static/movie-snapshot/Detroit_Become_Human.webp')] h-60 w-[23%] min-w-[14rem] bg-center bg-cover rounded-2xl overflow-hidden"
+            >
               <div
-                class="movie-cont-watch-title rounded-b-2xl bg-[#1E1F26] p-4"
+                class="overlay bg-slate-800 bg-opacity-60 w-full h-full p-4 text-white flex flex-col justify-between"
               >
-                <h3 class="text-white">La haine</h3>
+                <div>
+                  <div
+                    class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
+                  >
+                    <img
+                      src="../static/imdb.png"
+                      alt="imdb icon"
+                      class="w-6 inline-block rounded-md"
+                    />
+                    <span>11</span>
+                  </div>
+                </div>
+                <div class="movie-info">
+                  <h2>Detroit</h2>
+                  <span class="text-[#CCCCCC]">2016</span>
+                  <div class="flex justify-between items-center">
+                    <a
+                      href="#"
+                      class="py-[5px] px-[7px] bg-primary rounded-xl shadow-lg shadow-primary-dark"
+                      >More Detail</a
+                    >
+                    <a
+                      href="#"
+                      class="text-white text-lg bg-[#ffffff5e] rounded-2xl py-[5px] px-[7px]"
+                    >
+                      <img
+                        src="../static/plus.png"
+                        alt="#"
+                        class="inline-block w-6 h-6"
+                      />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-            <!-- movie, yes a movie -->
-            <div class="movie-cont-watch-container w-56">
-              <img
-                class="overflow-hidden rounded-t-2xl object-cover h-[160px]"
-                src="../static/movie-snapshot/12-angry-man.webp"
-                alt="movie snapshot"
-              />
-              <div class="watch-progress-container h-[3px] bg-secondary">
-                <div class="watch-progress h-[3px] bg-primary w-[33%]"></div>
-              </div>
+            <!-- a trending movie -->
+            <div
+              class="bg-[url('../static/movie-snapshot/stranger-things.jpg')] h-60 w-[23%] min-w-[14rem] bg-center bg-cover rounded-2xl overflow-hidden"
+            >
               <div
-                class="movie-cont-watch-title rounded-b-2xl bg-[#1E1F26] p-4"
+                class="overlay bg-slate-800 bg-opacity-60 w-full h-full p-4 text-white flex flex-col justify-between"
               >
-                <h3 class="text-white">12 angry man</h3>
+                <div>
+                  <div
+                    class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
+                  >
+                    <img
+                      src="../static/imdb.png"
+                      alt="imdb icon"
+                      class="w-6 inline-block rounded-md"
+                    />
+                    <span>7</span>
+                  </div>
+                </div>
+                <div class="movie-info">
+                  <h2>Stranger things</h2>
+                  <span class="text-[#CCCCCC]">2012</span>
+                  <div class="flex justify-between items-center">
+                    <a
+                      href="#"
+                      class="py-[5px] px-[7px] bg-primary rounded-xl shadow-lg shadow-primary-dark"
+                      >More Detail</a
+                    >
+                    <a
+                      href="#"
+                      class="text-white text-lg bg-[#ffffff5e] rounded-2xl py-[5px] px-[7px]"
+                    >
+                      <img
+                        src="../static/plus.png"
+                        alt="#"
+                        class="inline-block w-6 h-6"
+                      />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-            <!-- movie -->
-            <div class="movie-cont-watch-container w-56">
-              <img
-                class="overflow-hidden rounded-t-2xl object-cover h-[160px]"
-                src="../static/movie-snapshot/project-x.jpg"
-                alt="movie snapshot"
-              />
-              <div class="watch-progress-container h-[3px] bg-secondary">
-                <div class="watch-progress h-[3px] bg-primary w-[90%]"></div>
-              </div>
+            <!-- a trending movie -->
+            <div
+              class="bg-[url('../static/movie-snapshot/la-haine.jpg')] h-60 w-[23%] min-w-[14rem] bg-center bg-cover rounded-2xl overflow-hidden"
+            >
               <div
-                class="movie-cont-watch-title rounded-b-2xl bg-[#1E1F26] p-4"
+                class="overlay bg-slate-800 bg-opacity-60 w-full h-full p-4 text-white flex flex-col justify-between"
               >
-                <h3 class="text-white">Project X</h3>
+                <div>
+                  <div
+                    class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
+                  >
+                    <img
+                      src="../static/imdb.png"
+                      alt="imdb icon"
+                      class="w-6 inline-block rounded-md"
+                    />
+                    <span>9.8</span>
+                  </div>
+                </div>
+                <div class="movie-info">
+                  <h2>La hane</h2>
+                  <span class="text-[#CCCCCC]">1968</span>
+                  <div class="flex justify-between items-center">
+                    <a
+                      href="#"
+                      class="py-[5px] px-[7px] bg-primary rounded-xl shadow-lg shadow-primary-dark"
+                      >More Detail</a
+                    >
+                    <a
+                      href="#"
+                      class="text-white text-lg bg-[#ffffff5e] rounded-2xl py-[5px] px-[7px]"
+                    >
+                      <img
+                        src="../static/plus.png"
+                        alt="#"
+                        class="inline-block w-6 h-6"
+                      />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
       </section>
     </main>
-    <aside class="w-[25%] pt-16 hidden sm:block">
-      <!-- online friends bar -->
-      <section class="flex flex-col gap-8 sticky top-20">
-        <a
-          href="#"
-          class="add-friend table m-auto bg-primary text-white p-3 rounded-2xl"
-        >
-          add a new friend
-        </a>
-        <!-- friend profile bar container -->
-        <div class="friend-profiles-container m-auto flex flex-col gap-8">
-          <!-- a friend profile -->
-          <a href="#" class="profile-container flex gap-2">
-            <div class="avatar-container relative">
-              <img
-                class="rounded-full"
-                src="../static/friend-avatars/1.jpg"
-                alt="friend avatar"
-                width="50px"
-                height="50px"
-              />
-              <img
-                class="absolute top-0 right-0"
-                src="../static/online-status.png"
-                alt="online status"
-                width="12px"
-              />
+    <aside class="w-[25%] p-5 hidden sm:block">
+      <section class="flex flex-col gap-8 sticky top-5">
+        <!-- top rated movies bar -->
+        <section>
+          <h2 class="mb-4 text-white">Top rated movies</h2>
+          <div class="top-rated-movies text-sm">
+            <!-- a movie -->
+            <div class="movie-container flex justify-start gap-2 my-2">
+              <div class="movie-poster-container">
+                <img
+                  src="../static/movie-cover/blacklist.jpg"
+                  alt=""
+                  class="w-16 rounded-2xl"
+                />
+              </div>
+              <div class="movie-info-container flex flex-col justify-between">
+                <div class="movie-name-container">
+                  <h2 class="text-white">BlackList</h2>
+                  <h3 class="text-secondary">action, horror</h3>
+                </div>
+                <div class="movie-imdb-container text-white">
+                  <div
+                    class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
+                  >
+                    <img
+                      src="../static/imdb.png"
+                      alt="imdb icon"
+                      class="w-6 inline-block rounded-md"
+                    />
+                    <span>8.3</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="username-container">
-              <!-- username -->
-              <span class="block text-white">Faranseque</span>
-              <!-- status -->
-              <span class="block text-secondary">hello world !</span>
+            <!-- a movie -->
+            <div class="movie-container flex justify-start gap-2 my-2">
+              <div class="movie-poster-container">
+                <img
+                  src="../static/movie-cover/clash.jpg"
+                  alt=""
+                  class="w-16 rounded-2xl"
+                />
+              </div>
+              <div class="movie-info-container flex flex-col justify-between">
+                <div class="movie-name-container">
+                  <h2 class="text-white">clash</h2>
+                  <h3 class="text-secondary">epic</h3>
+                </div>
+                <div class="movie-imdb-container text-white">
+                  <div
+                    class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
+                  >
+                    <img
+                      src="../static/imdb.png"
+                      alt="imdb icon"
+                      class="w-6 inline-block rounded-md"
+                    />
+                    <span>10</span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </a>
-          <!-- a friend profile -->
-          <a href="#" class="profile-container flex gap-2">
-            <div class="avatar-container relative">
-              <img
-                class="rounded-full"
-                src="../static/friend-avatars/2.jpg"
-                alt="friend avatar"
-                width="50px"
-                height="50px"
-              />
-              <img
-                class="absolute top-0 right-0"
-                src="../static/online-status.png"
-                alt="online status"
-                width="12px"
-              />
+            <!-- a movie -->
+            <div class="movie-container flex justify-start gap-2 my-2">
+              <div class="movie-poster-container">
+                <img
+                  src="../static/movie-cover/LOTR.jpg"
+                  alt=""
+                  class="w-16 rounded-2xl"
+                />
+              </div>
+              <div class="movie-info-container flex flex-col justify-between">
+                <div class="movie-name-container">
+                  <h2 class="text-white">LOTR</h2>
+                  <h3 class="text-secondary">adventure</h3>
+                </div>
+                <div class="movie-imdb-container text-white">
+                  <div
+                    class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
+                  >
+                    <img
+                      src="../static/imdb.png"
+                      alt="imdb icon"
+                      class="w-6 inline-block rounded-md"
+                    />
+                    <span>7.4</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="username-container">
-              <!-- username -->
-              <span class="block text-white">AliAkhbar</span>
-              <!-- status -->
-              <span class="block text-secondary">no hate</span>
+          </div>
+          <a href="#" class="text-primary text-center m-auto table">see all</a>
+        </section>
+        <!-- upcoming movies bar -->
+        <section>
+          <h2 class="mb-4 text-white">Upcoming movies</h2>
+          <div class="upcoming-movies text-sm">
+            <!-- a movie -->
+            <div class="movie-container flex justify-start gap-2 my-2">
+              <div class="movie-poster-container">
+                <img
+                  src="../static/movie-cover/upcoming-1.jpg"
+                  alt=""
+                  class="w-16 rounded-2xl"
+                />
+              </div>
+              <div class="movie-info-container flex flex-col justify-between">
+                <div class="movie-name-container">
+                  <h2 class="text-white">SpiderMan</h2>
+                  <h3 class="text-secondary">animation</h3>
+                </div>
+                <div class="movie-imdb-container text-white">
+                  <div
+                    class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
+                  >
+                    <img
+                      src="../static/imdb.png"
+                      alt="imdb icon"
+                      class="w-6 inline-block rounded-md"
+                    />
+                    <span>8.3</span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </a>
-          <!-- a friend profile -->
-          <a href="#" class="profile-container flex gap-2">
-            <div class="avatar-container relative">
-              <img
-                class="rounded-full"
-                src="../static/friend-avatars/3.jpg"
-                alt="friend avatar"
-                width="50px"
-                height="50px"
-              />
-              <img
-                class="absolute top-0 right-0"
-                src="../static/online-status.png"
-                alt="online status"
-                width="12px"
-              />
+            <!-- a movie -->
+            <div class="movie-container flex justify-start gap-2 my-2">
+              <div class="movie-poster-container">
+                <img
+                  src="../static/movie-cover/upcoming-2.jpg"
+                  alt=""
+                  class="w-16 rounded-2xl"
+                />
+              </div>
+              <div class="movie-info-container flex flex-col justify-between">
+                <div class="movie-name-container">
+                  <h2 class="text-white">Wacko!</h2>
+                  <h3 class="text-secondary">fun</h3>
+                </div>
+                <div class="movie-imdb-container text-white">
+                  <div
+                    class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
+                  >
+                    <img
+                      src="../static/imdb.png"
+                      alt="imdb icon"
+                      class="w-6 inline-block rounded-md"
+                    />
+                    <span>10</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="username-container">
-              <!-- username -->
-              <span class="block text-white">lileson</span>
-              <!-- status -->
-              <span class="block text-secondary">bio</span>
+            <!-- a movie -->
+            <div class="movie-container flex justify-start gap-2 my-2">
+              <div class="movie-poster-container">
+                <img
+                  src="../static/movie-cover/upcoming-3.jpg"
+                  alt=""
+                  class="w-16 rounded-2xl"
+                />
+              </div>
+              <div class="movie-info-container flex flex-col justify-between">
+                <div class="movie-name-container">
+                  <h2 class="text-white">Pearl</h2>
+                  <h3 class="text-secondary">drama</h3>
+                </div>
+                <div class="movie-imdb-container text-white">
+                  <div
+                    class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
+                  >
+                    <img
+                      src="../static/imdb.png"
+                      alt="imdb icon"
+                      class="w-6 inline-block rounded-md"
+                    />
+                    <span>7.4</span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </a>
-          <!-- a friend profile -->
-          <a href="#" class="profile-container flex gap-2">
-            <div class="avatar-container relative">
-              <img
-                class="rounded-full"
-                src="../static/friend-avatars/4.jpg"
-                alt="friend avatar"
-                width="50px"
-                height="50px"
-              />
-              <img
-                class="absolute top-0 right-0"
-                src="../static/online-status.png"
-                alt="online status"
-                width="12px"
-              />
-            </div>
-            <div class="username-container">
-              <!-- username -->
-              <span class="block text-white">rezdude</span>
-              <!-- status -->
-              <span class="block text-secondary">...</span>
-            </div>
-          </a>
-          <!-- a friend profile -->
-          <a href="#" class="profile-container flex gap-2">
-            <div class="avatar-container relative">
-              <img
-                class="rounded-full"
-                src="../static/friend-avatars/5.jpg"
-                alt="friend avatar"
-                width="50px"
-                height="50px"
-              />
-              <img
-                class="absolute top-0 right-0 hidden"
-                src="../static/online-status.png"
-                alt="online status"
-                width="12px"
-              />
-            </div>
-            <div class="username-container">
-              <!-- username -->
-              <span class="block text-white">moriarty</span>
-              <!-- status -->
-              <span class="block text-secondary">got you !</span>
-            </div>
-          </a>
-          <!-- a friend profile -->
-          <a href="#" class="profile-container flex gap-2">
-            <div class="avatar-container relative">
-              <img
-                class="rounded-full"
-                src="../static/friend-avatars/6.jpg"
-                alt="friend avatar"
-                width="50px"
-                height="50px"
-              />
-              <img
-                class="absolute top-0 right-0 hidden"
-                src="../static/online-status.png"
-                alt="online status"
-                width="12px"
-              />
-            </div>
-            <div class="username-container">
-              <!-- username -->
-              <span class="block text-white">socrates</span>
-              <!-- status -->
-              <span class="block text-secondary">I know nothing !</span>
-            </div>
-          </a>
-          <!-- see all friends -->
-          <a href="#" class="text-primary text-sm text-center">See all</a>
-        </div>
+          </div>
+          <a href="#" class="text-primary text-center m-auto table">see all</a>
+        </section>
       </section>
     </aside>
   </body>

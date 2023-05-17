@@ -4,3 +4,7 @@
   background-size: cover;
   overflow: hidden;
 }
+
+.active-selector {
+  color: #d91f27;
+}
