@@ -667,6 +667,36 @@ img.movie-poster {
   padding: 0.75rem;
 }
 
+.genre-selector-active {
+  margin-bottom: 0.25rem;
+  display: inline-block;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 31 39 / var(--tw-bg-opacity));
+  padding: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.genre-selector-inactive {
+  margin-bottom: 0.25rem;
+  display: inline-block;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(73 75 87 / var(--tw-bg-opacity));
+  padding: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .absolute {
   position: absolute;
 }
@@ -699,12 +729,12 @@ img.movie-poster {
   top: 5rem;
 }
 
-.top-\[-20px\] {
-  top: -20px;
-}
-
 .top-5 {
   top: 1.25rem;
+}
+
+.top-\[-20px\] {
+  top: -20px;
 }
 
 .z-10 {
@@ -717,10 +747,6 @@ img.movie-poster {
 
 .m-auto {
   margin: auto;
-}
-
-.m-2 {
-  margin: 0.5rem;
 }
 
 .mx-3 {
@@ -745,6 +771,14 @@ img.movie-poster {
 
 .mb-0 {
   margin-bottom: 0px;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-14 {
+  margin-bottom: 3.5rem;
 }
 
 .mb-2 {
@@ -773,6 +807,10 @@ img.movie-poster {
 
 .ml-1 {
   margin-left: 0.25rem;
+}
+
+.ml-\[1px\] {
+  margin-left: 1px;
 }
 
 .ml-\[2px\] {
@@ -823,14 +861,6 @@ img.movie-poster {
   margin-top: -15px;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
-.mb-14 {
-  margin-bottom: 3.5rem;
-}
-
 .block {
   display: block;
 }
@@ -879,6 +909,10 @@ img.movie-poster {
   height: 7rem;
 }
 
+.h-3 {
+  height: 0.75rem;
+}
+
 .h-32 {
   height: 8rem;
 }
@@ -887,12 +921,20 @@ img.movie-poster {
   height: 1rem;
 }
 
+.h-40 {
+  height: 10rem;
+}
+
 .h-44 {
   height: 11rem;
 }
 
 .h-6 {
   height: 1.5rem;
+}
+
+.h-60 {
+  height: 15rem;
 }
 
 .h-7 {
@@ -951,18 +993,6 @@ img.movie-poster {
   height: 1px;
 }
 
-.h-80 {
-  height: 20rem;
-}
-
-.h-60 {
-  height: 15rem;
-}
-
-.h-40 {
-  height: 10rem;
-}
-
 .w-1 {
   width: 0.25rem;
 }
@@ -973,6 +1003,10 @@ img.movie-poster {
 
 .w-12 {
   width: 3rem;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .w-28 {
@@ -1007,10 +1041,6 @@ img.movie-poster {
   width: 2rem;
 }
 
-.w-96 {
-  width: 24rem;
-}
-
 .w-\[100\%\] {
   width: 100%;
 }
@@ -1029,6 +1059,10 @@ img.movie-poster {
 
 .w-\[20\%\] {
   width: 20%;
+}
+
+.w-\[23\%\] {
+  width: 23%;
 }
 
 .w-\[25\%\] {
@@ -1073,58 +1107,6 @@ img.movie-poster {
 
 .w-px {
   width: 1px;
-}
-
-.w-40 {
-  width: 10rem;
-}
-
-.w-80 {
-  width: 20rem;
-}
-
-.w-60 {
-  width: 15rem;
-}
-
-.w-52 {
-  width: 13rem;
-}
-
-.w-56 {
-  width: 14rem;
-}
-
-.w-\[23\%\] {
-  width: 23%;
-}
-
-.w-\[10\%\] {
-  width: 10%;
-}
-
-.w-\[24\%\] {
-  width: 24%;
-}
-
-.w-5 {
-  width: 1.25rem;
-}
-
-.w-24 {
-  width: 6rem;
-}
-
-.w-20 {
-  width: 5rem;
-}
-
-.w-16 {
-  width: 4rem;
-}
-
-.min-w-\[56rem\] {
-  min-width: 56rem;
 }
 
 .min-w-\[14rem\] {
@@ -1256,6 +1238,10 @@ img.movie-poster {
   border-radius: 9999px;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .rounded-md {
   border-radius: 0.375rem;
 }
@@ -1352,14 +1338,14 @@ img.movie-poster {
   background-color: rgb(217 31 39 / var(--tw-bg-opacity));
 }
 
-.bg-red-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-
 .bg-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(73 75 87 / var(--tw-bg-opacity));
+}
+
+.bg-slate-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
 .bg-slate-400 {
@@ -1377,54 +1363,37 @@ img.movie-poster {
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
 
-.bg-transparent {
-  background-color: transparent;
-}
-
 .bg-slate-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
-.bg-slate-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
-}
-
-.bg-opacity-60 {
-  --tw-bg-opacity: 0.6;
-}
-
-.bg-opacity-80 {
-  --tw-bg-opacity: 0.8;
+.bg-transparent {
+  background-color: transparent;
 }
 
 .bg-opacity-20 {
   --tw-bg-opacity: 0.2;
 }
 
-.bg-\[url\(\'\.\/\.\.\/static\/movie-snapshot\/blade-runner\.jpg\'\)\] {
-  background-image: url('./../static/movie-snapshot/blade-runner.jpg');
-}
-
-.bg-\[url\(\'\.\.\/static\/movie-snapshot\/blade-runner\.jpg\'\)\] {
-  background-image: url('../static/movie-snapshot/blade-runner.jpg');
+.bg-opacity-60 {
+  --tw-bg-opacity: 0.6;
 }
 
 .bg-\[url\(\'\.\.\/static\/movie-snapshot\/Detroit_Become_Human\.webp\'\)\] {
   background-image: url('../static/movie-snapshot/Detroit_Become_Human.webp');
 }
 
-.bg-\[url\(\'\.\.\/static\/movie-snapshot\/stranger-things\.jpg\'\)\] {
-  background-image: url('../static/movie-snapshot/stranger-things.jpg');
+.bg-\[url\(\'\.\.\/static\/movie-snapshot\/blade-runner\.jpg\'\)\] {
+  background-image: url('../static/movie-snapshot/blade-runner.jpg');
 }
 
 .bg-\[url\(\'\.\.\/static\/movie-snapshot\/la-haine\.jpg\'\)\] {
   background-image: url('../static/movie-snapshot/la-haine.jpg');
 }
 
-.bg-\[url\(\'\.\.\/static\/trailer-cover\/blade-runner\.jpg\'\)\] {
-  background-image: url('../static/trailer-cover/blade-runner.jpg');
+.bg-\[url\(\'\.\.\/static\/movie-snapshot\/stranger-things\.jpg\'\)\] {
+  background-image: url('../static/movie-snapshot/stranger-things.jpg');
 }
 
 .bg-\[url\(\'\.\.\/static\/trailer-cover\/1\.jpg\'\)\] {
@@ -1520,6 +1489,11 @@ img.movie-poster {
   padding-right: 1rem;
 }
 
+.px-\[7px\] {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
 .py-0 {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -1553,16 +1527,6 @@ img.movie-poster {
 .py-\[5px\] {
   padding-top: 5px;
   padding-bottom: 5px;
-}
-
-.px-\[1\.5rem\] {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.px-\[7px\] {
-  padding-left: 7px;
-  padding-right: 7px;
 }
 
 .pb-0 {
@@ -1625,10 +1589,6 @@ img.movie-poster {
   padding-top: 1px;
 }
 
-.pt-7 {
-  padding-top: 1.75rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1675,6 +1635,11 @@ img.movie-poster {
   font-weight: 700;
 }
 
+.text-\[\#CCCCCC\] {
+  --tw-text-opacity: 1;
+  color: rgb(204 204 204 / var(--tw-text-opacity));
+}
+
 .text-gray-300 {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
@@ -1705,14 +1670,9 @@ img.movie-poster {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-slate-600 {
+.text-slate-400 {
   --tw-text-opacity: 1;
-  color: rgb(71 85 105 / var(--tw-text-opacity));
-}
-
-.text-\[\#CCCCCC\] {
-  --tw-text-opacity: 1;
-  color: rgb(204 204 204 / var(--tw-text-opacity));
+  color: rgb(148 163 184 / var(--tw-text-opacity));
 }
 
 .placeholder-secondary::-moz-placeholder {
@@ -1729,14 +1689,6 @@ img.movie-poster {
   opacity: 0;
 }
 
-.bg-blend-overlay {
-  background-blend-mode: overlay;
-}
-
-.bg-blend-darken {
-  background-blend-mode: darken;
-}
-
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
@@ -1751,12 +1703,6 @@ img.movie-poster {
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
-}
-
-.backdrop-brightness-50 {
-  --tw-backdrop-brightness: brightness(.5);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .transition-all {
