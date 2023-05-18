@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css imports -->
+    <link href="../dist/output.css" rel="stylesheet" />
+    <link href="./navbar.css" rel="stylesheet" />
+    <link href="./sidebar.css" rel="stylesheet" />
+
+    <!-- fav icon -->
+    <link rel="icon" type="image/x-icon" href="../static/logo.png" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;0,900;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>People | My movie.</title>
+  </head>
+  <body class="bg-slate-500 flex">
+    <nav class="navbar w-[20%] h-auto pb-4 hidden sm:block">
+      <div class="flex justify-end p-8 sm:hidden">
+        <img
+          id="close-menu-btn"
+          src="../static/plus.png"
+          class="w-7 h-7 rotate-45"
+          alt="close-btn"
+        />
+      </div>
+      <div class="sticky top-0">
+        <!-- logo -->
+        <div class="logo-container mb-4">
+          <img src="../static/logo.png" alt="mymovie logo" class="logo" />
+          <h1>My movie<strong class="text-[35px] text-primary">.</strong></h1>
+        </div>
+        <!-- main links -->
+        <section class="text-sm pb-3 pt-3">
+          <h2 class="nav-section-header">Personal</h2>
+          <a class="nav-link" href="./home.html">
+            <img
+              src="../static/home.png"
+              alt="home icon"
+              class="w-4 h-4 inline mr-3"
+            />
+            <span>Home</span>
+          </a>
+          <a class="nav-link" href="./browse.html">
+            <img
+              src="../static/compass.png"
+              alt="browse icon"
+              class="w-4 h-4 inline mr-3"
+            />
+            <span>Browse</span>
+          </a>
+          <a class="nav-link" href="./watchlist.html">
+            <img
+              src="../static/heart.png"
+              alt="heart icon"
+              class="w-4 h-4 inline mr-3"
+            />
+            <span>Watchlist</span>
+          </a>
+          <!-- <a class="nav-link" href="#">
+            <img
+              src="../static/calendar.png"
+              alt="calendar icon"
+              class="w-4 h-4 inline mr-3"
+            />
+            <span>Coming soon</span>
+          </a> -->
+        </section>
+        <section class="text-sm pb-3 pt-3">
+          <h2 class="nav-section-header">Menu</h2>
+          <a class="nav-link" href="./movies.html">
+            <img
+              src="../static/movie.png  "
+              alt="friend icon"
+              class="w-4 h-3 inline mr-[14px] ml-[2px]"
+            />
+            <span>Movies</span>
+          </a>
+          <a class="nav-link" href="./friends.html">
+            <img
+              src="../static/TVshow.png  "
+              alt="friend icon"
+              class="w-4 h-4 inline mr-[14px] ml-[1px]"
+            />
+            <span>TV shows</span>
+          </a>
+          <a class="nav-link active" href="./people.html">
+            <img
+              src="../static/people-active.png"
+              alt="party icon"
+              class="w-4 h-4 inline mr-3"
+            />
+            <span>People</span>
+          </a>
+        </section>
+        <section class="text-sm pb-3 pt-3">
+          <h2 class="nav-section-header">general</h2>
+          <a class="nav-link" href="./setting.html">
+            <img
+              src="../static/setting.png"
+              alt="setting icon"
+              class="w-4 h-4 inline mr-3"
+            />
+            <span>Setting</span>
+          </a>
+          <a class="nav-link" href="./logout.html">
+            <img
+              src="../static/logout.png"
+              alt="logout icon"
+              class="w-4 h-4 inline mr-3"
+            />
+            <span>Log out</span>
+          </a>
+        </section>
+        <!-- notification container -->
+        <div class="notification-container">
+          <br />
+          <br />
+        </div>
+        <!-- tahmasious github -->
+        <div
+          class="github-link-container bg-[#131519] w-[80%] rounded-2xl table m-auto mt-10"
+        >
+          <img
+            src="../static/tahmasious.jpg"
+            alt="owner profile image"
+            width="50px"
+            height="50px"
+            class="rounded-2xl table m-auto relative top-[-20px]"
+          />
+          <h3 class="m-auto text-slate-500 text-center mt-[-15px]">
+            Tahmasious
+          </h3>
+          <h4 class="m-auto text-slate-700 text-center">Owner and dev</h4>
+          <a
+            target="_blank"
+            class="bg-slate-700 table m-auto text-white pl-4 pr-4 pt-2 pb-2 rounded-2xl mb-2 mt-2"
+            href="https://github.com/tahmasious"
+            >Visit github</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- main content (middle section) -->
+    <main class="w-[100%] p-8">
+      <!-- header (searchbar + profile container) -->
+      <header class="flex items-center justify-start sm:justify-between">
+        <div class="phone-icon-menu-container sm:hidden block">
+          <img
+            id="open-menu-btn"
+            class="rotate-0 w-10 h-10"
+            src="../static/menu.png"
+            alt="menu icon"
+          />
+        </div>
+      </header>
+      <!-- content section -->
+      <section class="content mt-7">
+        <!-- people list -->
+        <section class="movie-poster-container">
+          <div class="flex justify-between mb-3 items-center">
+            <h2 class="text-white text-lg">Popular people</h2>
+          </div>
+          <div class="flex flex-wrap justify-between">
+            <!-- people container  -->
+            <div>
+              <a class="thumbnail-image relative">
+                <img
+                  src="../static/people/thomasin.jpg"
+                  alt="movie poster"
+                  class="movie-poster"
+                />
+                <div
+                  class="overlay-desc absolute top-0 left-0 rounded-2xl w-full h-full p-3 flex items-center justify-between flex-col gap-1 transition-all opacity-0"
+                >
+                  <div>
+                    <h3 class="text-white ml-1 text-center">
+                      Thomasin mckenzie
+                    </h3>
+                  </div>
+                  <div>
+                    <div class="known-credit-number text-center">24</div>
+                    <div class="known-credit-title text-center">
+                      known credit
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- people container  -->
+            <div>
+              <a class="thumbnail-image relative">
+                <img
+                  src="../static/people/valorie.jpg"
+                  alt="movie poster"
+                  class="movie-poster"
+                />
+                <div
+                  class="overlay-desc absolute top-0 left-0 rounded-2xl w-full h-full p-3 flex items-center justify-between flex-col gap-1 transition-all opacity-0"
+                >
+                  <div>
+                    <h3 class="text-white ml-1 text-center">valorie curry</h3>
+                  </div>
+                  <div>
+                    <div class="known-credit-number text-center">13</div>
+                    <div class="known-credit-title text-center">
+                      known credit
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- people container  -->
+            <div>
+              <a class="thumbnail-image relative">
+                <img
+                  src="../static/people/olive.jpg"
+                  alt="movie poster"
+                  class="movie-poster"
+                />
+                <div
+                  class="overlay-desc absolute top-0 left-0 rounded-2xl w-full h-full p-3 flex items-center justify-between flex-col gap-1 transition-all opacity-0"
+                >
+                  <div>
+                    <h3 class="text-white ml-1 text-center">Olive Cooper</h3>
+                  </div>
+                  <div>
+                    <div class="known-credit-number text-center">24</div>
+                    <div class="known-credit-title text-center">
+                      known credit
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- people container  -->
+            <div>
+              <a class="thumbnail-image relative">
+                <img
+                  src="../static/people/andrew.jpg"
+                  alt="movie poster"
+                  class="movie-poster"
+                />
+                <div
+                  class="overlay-desc absolute top-0 left-0 rounded-2xl w-full h-full p-3 flex items-center justify-between flex-col gap-1 transition-all opacity-0"
+                >
+                  <div>
+                    <h3 class="text-white ml-1 text-center">Andrew Scott</h3>
+                  </div>
+                  <div>
+                    <div class="known-credit-number text-center">45</div>
+                    <div class="known-credit-title text-center">
+                      known credit
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- people container  -->
+            <div>
+              <a class="thumbnail-image relative">
+                <img
+                  src="../static/people/spartacus.jpg"
+                  alt="movie poster"
+                  class="movie-poster"
+                />
+                <div
+                  class="overlay-desc absolute top-0 left-0 rounded-2xl w-full h-full p-3 flex items-center justify-between flex-col gap-1 transition-all opacity-0"
+                >
+                  <div>
+                    <h3 class="text-white ml-1 text-center">spartacus</h3>
+                  </div>
+                  <div>
+                    <div class="known-credit-number text-center">20</div>
+                    <div class="known-credit-title text-center">
+                      known credit
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- people container  -->
+            <div>
+              <a class="thumbnail-image relative">
+                <img
+                  src="../static/people/jesse.jpg"
+                  alt="movie poster"
+                  class="movie-poster"
+                />
+                <div
+                  class="overlay-desc absolute top-0 left-0 rounded-2xl w-full h-full p-3 flex items-center justify-between flex-col gap-1 transition-all opacity-0"
+                >
+                  <div>
+                    <h3 class="text-white ml-1 text-center">Jesse Williams</h3>
+                  </div>
+                  <div>
+                    <div class="known-credit-number text-center">24</div>
+                    <div class="known-credit-title text-center">
+                      known credit
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- people container  -->
+            <div>
+              <a class="thumbnail-image relative">
+                <img
+                  src="../static/people/dustin.jpg"
+                  alt="movie poster"
+                  class="movie-poster"
+                />
+                <div
+                  class="overlay-desc absolute top-0 left-0 rounded-2xl w-full h-full p-3 flex items-center justify-between flex-col gap-1 transition-all opacity-0"
+                >
+                  <div>
+                    <h3 class="text-white ml-1 text-center">Dustin Clare</h3>
+                  </div>
+                  <div>
+                    <div class="known-credit-number text-center">24</div>
+                    <div class="known-credit-title text-center">
+                      known credit
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <aside class="w-[25%] p-5 hidden sm:block">
+      <section class="flex flex-col gap-8 sticky top-5">
+        <!-- top rated movies bar -->
+        <section>
+          <h2 class="mb-4 text-white">Top rated movies</h2>
+          <div class="top-rated-movies text-sm">
+            <!-- a movie -->
+            <div class="movie-container flex justify-start gap-2 my-2">
+              <div class="movie-poster-container">
+                <img
+                  src="../static/movie-cover/blacklist.jpg"
+                  alt=""
+                  class="w-16 rounded-2xl"
+                />
+              </div>
+              <div class="movie-info-container flex flex-col justify-between">
+                <div class="movie-name-container">
+                  <h2 class="text-white">BlackList</h2>
+                  <h3 class="text-secondary">action, horror</h3>
+                </div>
+                <div class="movie-imdb-container text-white">
+                  <div
+                    class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
+                  >
+                    <img
+                      src="../static/imdb.png"
+                      alt="imdb icon"
+                      class="w-6 inline-block rounded-md"
+                    />
+                    <span>8.3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- a movie -->
+            <div class="movie-container flex justify-start gap-2 my-2">
+              <div class="movie-poster-container">
+                <img
+                  src="../static/movie-cover/clash.jpg"
+                  alt=""
+                  class="w-16 rounded-2xl"
+                />
+              </div>
+              <div class="movie-info-container flex flex-col justify-between">
+                <div class="movie-name-container">
+                  <h2 class="text-white">clash</h2>
+                  <h3 class="text-secondary">epic</h3>
+                </div>
+                <div class="movie-imdb-container text-white">
+                  <div
+                    class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
+                  >
+                    <img
+                      src="../static/imdb.png"
+                      alt="imdb icon"
+                      class="w-6 inline-block rounded-md"
+                    />
+                    <span>10</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- a movie -->
+            <div class="movie-container flex justify-start gap-2 my-2">
+              <div class="movie-poster-container">
+                <img
+                  src="../static/movie-cover/LOTR.jpg"
+                  alt=""
+                  class="w-16 rounded-2xl"
+                />
+              </div>
+              <div class="movie-info-container flex flex-col justify-between">
+                <div class="movie-name-container">
+                  <h2 class="text-white">LOTR</h2>
+                  <h3 class="text-secondary">adventure</h3>
+                </div>
+                <div class="movie-imdb-container text-white">
+                  <div
+                    class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
+                  >
+                    <img
+                      src="../static/imdb.png"
+                      alt="imdb icon"
+                      class="w-6 inline-block rounded-md"
+                    />
+                    <span>7.4</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="text-primary text-center m-auto table">see all</a>
+        </section>
+        <!-- upcoming movies bar -->
+        <section>
+          <h2 class="mb-4 text-white">Upcoming movies</h2>
+          <div class="upcoming-movies text-sm">
+            <!-- a movie -->
+            <div class="movie-container flex justify-start gap-2 my-2">
+              <div class="movie-poster-container">
+                <img
+                  src="../static/movie-cover/upcoming-1.jpg"
+                  alt=""
+                  class="w-16 rounded-2xl"
+                />
+              </div>
+              <div class="movie-info-container flex flex-col justify-between">
+                <div class="movie-name-container">
+                  <h2 class="text-white">SpiderMan</h2>
+                  <h3 class="text-secondary">animation</h3>
+                </div>
+                <div class="movie-imdb-container text-white">
+                  <div
+                    class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
+                  >
+                    <img
+                      src="../static/imdb.png"
+                      alt="imdb icon"
+                      class="w-6 inline-block rounded-md"
+                    />
+                    <span>8.3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- a movie -->
+            <div class="movie-container flex justify-start gap-2 my-2">
+              <div class="movie-poster-container">
+                <img
+                  src="../static/movie-cover/upcoming-2.jpg"
+                  alt=""
+                  class="w-16 rounded-2xl"
+                />
+              </div>
+              <div class="movie-info-container flex flex-col justify-between">
+                <div class="movie-name-container">
+                  <h2 class="text-white">Wacko!</h2>
+                  <h3 class="text-secondary">fun</h3>
+                </div>
+                <div class="movie-imdb-container text-white">
+                  <div
+                    class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
+                  >
+                    <img
+                      src="../static/imdb.png"
+                      alt="imdb icon"
+                      class="w-6 inline-block rounded-md"
+                    />
+                    <span>10</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- a movie -->
+            <div class="movie-container flex justify-start gap-2 my-2">
+              <div class="movie-poster-container">
+                <img
+                  src="../static/movie-cover/upcoming-3.jpg"
+                  alt=""
+                  class="w-16 rounded-2xl"
+                />
+              </div>
+              <div class="movie-info-container flex flex-col justify-between">
+                <div class="movie-name-container">
+                  <h2 class="text-white">Pearl</h2>
+                  <h3 class="text-secondary">drama</h3>
+                </div>
+                <div class="movie-imdb-container text-white">
+                  <div
+                    class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
+                  >
+                    <img
+                      src="../static/imdb.png"
+                      alt="imdb icon"
+                      class="w-6 inline-block rounded-md"
+                    />
+                    <span>7.4</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="text-primary text-center m-auto table">see all</a>
+        </section>
+      </section>
+    </aside>
+  </body>
+  <script src="./script.js"></script>
+</html>
