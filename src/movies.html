@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css imports -->
+    <link href="../dist/output.css" rel="stylesheet" />
+    <link href="./navbar.css" rel="stylesheet" />
+    <link href="./movies.css" rel="stylesheet" />
+    <link href="./sidebar.css" rel="stylesheet" />
+
+    <!-- fav icon -->
+    <link rel="icon" type="image/x-icon" href="../static/logo.png" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;0,900;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>People | My movie.</title>
+  </head>
+  <body class="bg-slate-500 flex">
+    <nav class="navbar w-[20%] h-auto pb-4 hidden sm:block">
+      <div class="flex justify-end p-8 sm:hidden">
+        <img
+          id="close-menu-btn"
+          src="../static/plus.png"
+          class="w-7 h-7 rotate-45"
+          alt="close-btn"
+        />
+      </div>
+      <div class="sticky top-0">
+        <!-- logo -->
+        <div class="logo-container mb-4">
+          <img src="../static/logo.png" alt="mymovie logo" class="logo" />
+          <h1>My movie<strong class="text-[35px] text-primary">.</strong></h1>
+        </div>
+        <!-- main links -->
+        <section class="text-sm pb-3 pt-3">
+          <h2 class="nav-section-header">Personal</h2>
+          <a class="nav-link" href="./home.html">
+            <img
+              src="../static/home.png"
+              alt="home icon"
+              class="w-4 h-4 inline mr-3"
+            />
+            <span>Home</span>
+          </a>
+          <a class="nav-link" href="./browse.html">
+            <img
+              src="../static/compass.png"
+              alt="browse icon"
+              class="w-4 h-4 inline mr-3"
+            />
+            <span>Browse</span>
+          </a>
+          <a class="nav-link" href="./watchlist.html">
+            <img
+              src="../static/heart.png"
+              alt="heart icon"
+              class="w-4 h-4 inline mr-3"
+            />
+            <span>Watchlist</span>
+          </a>
+          <!-- <a class="nav-link" href="#">
+            <img
+              src="../static/calendar.png"
+              alt="calendar icon"
+              class="w-4 h-4 inline mr-3"
+            />
+            <span>Coming soon</span>
+          </a> -->
+        </section>
+        <section class="text-sm pb-3 pt-3">
+          <h2 class="nav-section-header">Menu</h2>
+          <a class="nav-link active" href="./friends.html">
+            <img
+              src="../static/movie-active.png  "
+              alt="friend icon"
+              class="w-4 h-3 inline mr-[14px] ml-[2px]"
+            />
+            <span>Movies</span>
+          </a>
+          <a class="nav-link" href="./friends.html">
+            <img
+              src="../static/TVshow.png  "
+              alt="friend icon"
+              class="w-4 h-4 inline mr-[14px] ml-[1px]"
+            />
+            <span>TV shows</span>
+          </a>
+          <a class="nav-link" href="./people.html">
+            <img
+              src="../static/people.png"
+              alt="party icon"
+              class="w-4 h-4 inline mr-3"
+            />
+            <span>People</span>
+          </a>
+        </section>
+        <section class="text-sm pb-3 pt-3">
+          <h2 class="nav-section-header">general</h2>
+          <a class="nav-link" href="./setting.html">
+            <img
+              src="../static/setting.png"
+              alt="setting icon"
+              class="w-4 h-4 inline mr-3"
+            />
+            <span>Setting</span>
+          </a>
+          <a class="nav-link" href="./logout.html">
+            <img
+              src="../static/logout.png"
+              alt="logout icon"
+              class="w-4 h-4 inline mr-3"
+            />
+            <span>Log out</span>
+          </a>
+        </section>
+        <!-- notification container -->
+        <div class="notification-container">
+          <br />
+          <br />
+        </div>
+        <!-- tahmasious github -->
+        <div
+          class="github-link-container bg-[#131519] w-[80%] rounded-2xl table m-auto mt-10"
+        >
+          <img
+            src="../static/tahmasious.jpg"
+            alt="owner profile image"
+            width="50px"
+            height="50px"
+            class="rounded-2xl table m-auto relative top-[-20px]"
+          />
+          <h3 class="m-auto text-slate-500 text-center mt-[-15px]">
+            Tahmasious
+          </h3>
+          <h4 class="m-auto text-slate-700 text-center">Owner and dev</h4>
+          <a
+            target="_blank"
+            class="bg-slate-700 table m-auto text-white pl-4 pr-4 pt-2 pb-2 rounded-2xl mb-2 mt-2"
+            href="https://github.com/tahmasious"
+            >Visit github</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- main content (middle section) -->
+    <main class="w-[100%] p-8">
+      <!-- header (searchbar + profile container) -->
+      <header class="flex items-center justify-start sm:justify-between">
+        <div class="phone-icon-menu-container sm:hidden block">
+          <img
+            id="open-menu-btn"
+            class="rotate-0 w-10 h-10"
+            src="../static/menu.png"
+            alt="menu icon"
+          />
+        </div>
+      </header>
+      <!-- content section -->
+      <section class="content mt-7">
+        <!-- people list -->
+        <section class="movie-poster-container">
+          <div class="flex justify-between mb-3 items-center">
+            <h2 class="text-white text-lg">Popular Movies</h2>
+          </div>
+          <div class="flex justify-between flex-wrap">
+            <!-- watched movies container  -->
+            <div>
+              <a class="thumbnail-image relative">
+                <img
+                  src="../static/movie-cover/joker_full.avif"
+                  alt="movie poster"
+                  class="movie-poster"
+                />
+                <div
+                  class="overlay-desc absolute top-0 left-0 rounded-2xl w-full h-full p-3 flex justify-end flex-col gap-1 transition-all opacity-0"
+                >
+                  <div class="scores">
+                    <div
+                      class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
+                    >
+                      <img
+                        src="../static/imdb.png"
+                        alt="imdb icon"
+                        class="w-6 inline-block rounded-md"
+                      />
+                      <span>10</span>
+                    </div>
+                  </div>
+                  <div class="genre">dark</div>
+                  <div class="more-infos">2020 - America</div>
+                </div>
+              </a>
+              <h3 class="text-white ml-1">Joker</h3>
+            </div>
+            <!-- watched movies container  -->
+            <div>
+              <a class="thumbnail-image relative">
+                <img
+                  src="../static/movie-cover/blacklist.jpg"
+                  alt="movie poster"
+                  class="movie-poster"
+                />
+                <div
+                  class="overlay-desc absolute top-0 left-0 rounded-2xl w-full h-full p-3 flex justify-end flex-col gap-1 transition-all opacity-0"
+                >
+                  <div class="scores">
+                    <div
+                      class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
+                    >
+                      <img
+                        src="../static/imdb.png"
+                        alt="imdb icon"
+                        class="w-6 inline-block rounded-md"
+                      />
+                      <span>7.6</span>
+                    </div>
+                  </div>
+                  <div class="genre">Family - Business</div>
+                  <div class="more-infos">2013 - America</div>
+                </div>
+              </a>
+              <h3 class="text-white ml-1">blacklist</h3>
+            </div>
+            <!-- watched movies container  -->
+            <div>
+              <a class="thumbnail-image relative">
+                <img
+                  src="../static/movie-cover/john_wick3.jpg"
+                  alt="movie poster"
+                  class="movie-poster"
+                />
+                <div
+                  class="overlay-desc absolute top-0 left-0 rounded-2xl w-full h-full p-3 flex justify-end flex-col gap-1 transition-all opacity-0"
+                >
+                  <div class="scores">
+                    <div
+                      class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
+                    >
+                      <img
+                        src="../static/imdb.png"
+                        alt="imdb icon"
+                        class="w-6 inline-block rounded-md"
+                      />
+                      <span>7.8</span>
+                    </div>
+                  </div>
+                  <div class="genre">Action</div>
+                  <div class="more-infos">2019 - America</div>
+                </div>
+              </a>
+              <h3 class="text-white ml-1">John Wick</h3>
+            </div>
+            <!-- watched movies container  -->
+            <div>
+              <a class="thumbnail-image relative">
+                <img
+                  src="../static/movie-cover/mag-eleph.jpg"
+                  alt="movie poster"
+                  class="movie-poster"
+                />
+                <div
+                  class="overlay-desc absolute top-0 left-0 rounded-2xl w-full h-full p-3 flex justify-end flex-col gap-1 transition-all opacity-0"
+                >
+                  <div class="scores">
+                    <div
+                      class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
+                    >
+                      <img
+                        src="../static/imdb.png"
+                        alt="imdb icon"
+                        class="w-6 inline-block rounded-md"
+                      />
+                      <span>6.2</span>
+                    </div>
+                  </div>
+                  <div class="genre">Comedy</div>
+                  <div class="more-infos">2019 - America</div>
+                </div>
+              </a>
+              <h3 class="text-white ml-1">Mag eleph</h3>
+            </div>
+            <!-- watched movies container  -->
+            <div>
+              <a class="thumbnail-image relative">
+                <img
+                  src="../static/movie-cover/noise.jpg"
+                  alt="movie poster"
+                  class="movie-poster"
+                />
+                <div
+                  class="overlay-desc absolute top-0 left-0 rounded-2xl w-full h-full p-3 flex justify-end flex-col gap-1 transition-all opacity-0"
+                >
+                  <div class="scores">
+                    <div
+                      class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
+                    >
+                      <img
+                        src="../static/imdb.png"
+                        alt="imdb icon"
+                        class="w-6 inline-block rounded-md"
+                      />
+                      <span>6.2</span>
+                    </div>
+                  </div>
+                  <div class="genre">Action</div>
+                  <div class="more-infos">2023 - America</div>
+                </div>
+              </a>
+              <h3 class="text-white ml-1">Noise</h3>
+            </div>
+            <!-- watched movies container  -->
+            <div>
+              <a class="thumbnail-image relative">
+                <img
+                  src="../static/movie-cover/boston.jpg"
+                  alt="movie poster"
+                  class="movie-poster"
+                />
+                <div
+                  class="overlay-desc absolute top-0 left-0 rounded-2xl w-full h-full p-3 flex justify-end flex-col gap-1 transition-all opacity-0"
+                >
+                  <div class="scores">
+                    <div
+                      class="imdb rounded-2xl bg-slate-400 inline-block px-1 py-0"
+                    >
+                      <img
+                        src="../static/imdb.png"
+                        alt="imdb icon"
+                        class="w-6 inline-block rounded-md"
+                      />
+                      <span>9.1</span>
+                    </div>
+                  </div>
+                  <div class="genre">Action</div>
+                  <div class="more-infos">2023 - America</div>
+                </div>
+              </a>
+              <h3 class="text-white ml-1">Boston Strangler</h3>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <aside class="w-[25%] p-5 hidden sm:block">
+      <section class="flex flex-col gap-8 sticky top-5">
+        <!-- sorting bar -->
+        <section>
+          <h2 class="mb-4 text-white">Sorting</h2>
+          <form action="/action_page.php">
+            <label for="sort-type" class="hidden"
+              >Choose a sorting type :</label
+            >
+            <select
+              id="sort_by"
+              name="sort_by"
+              class="rounded-lg p-2 bg-secondary text-white w-full"
+            >
+              <option value="popularity.desc" selected>
+                Popularity Descending
+              </option>
+              <option value="popularity.asc">Popularity Ascending</option>
+              <option value="vote_average.desc">Rating Descending</option>
+              <option value="vote_average.asc">Rating Ascending</option>
+              <option value="primary_release_date.desc">
+                Release Date Descending
+              </option>
+              <option value="primary_release_date.asc">
+                Release Date Ascending
+              </option>
+              <option value="title.asc">Title (A-Z)</option>
+              <option value="title.desc">Title (Z-A)</option>
+            </select>
+          </form>
+        </section>
+        <!-- filtering bar -->
+        <section>
+          <h2 class="text-white mb-2">Filtering</h2>
+          <div class="genre-selector my-2">
+            <h3 class="text-md text-slate-400 mb-1">Genre</h3>
+            <div>
+              <span class="genre-selector-active">action</span>
+              <span class="genre-selector-inactive">Adventure</span>
+              <span class="genre-selector-inactive">Animation</span>
+              <span class="genre-selector-inactive">Comedy</span>
+              <span class="genre-selector-active">Crime</span>
+              <span class="genre-selector-inactive">Documentary</span>
+              <span class="genre-selector-active">Drama</span>
+              <span class="genre-selector-inactive">Family</span>
+              <span class="genre-selector-inactive">Fantasy</span>
+              <span class="genre-selector-inactive">History</span>
+              <span class="genre-selector-inactive">Horror</span>
+            </div>
+          </div>
+          <div class="language-select my-2">
+            <h3 class="text-md text-slate-400 mb-1">Language</h3>
+            <div>
+              <select
+                id="sort_by"
+                name="sort_by"
+                class="rounded-lg p-2 bg-secondary text-white w-full"
+              >
+                <option value="" selected="selected">None Selected</option>
+                <option value="en">English</option>
+                <option value="fr">French</option>
+              </select>
+            </div>
+          </div>
+          <div class="show-me-check my-2">
+            <h3 class="text-md text-slate-400 mb-1">Show me</h3>
+            <div>
+              <input
+                id="show-all"
+                type="radio"
+                name="show-val"
+                value="all"
+              /><label for="show-all" class="text-white ml-1">Everything</label
+              ><br />
+              <input
+                id="show-have-not-seen"
+                type="radio"
+                name="show-val"
+                value="only-have-not-seen"
+              />
+              <label class="text-white ml-1" for="show-have-not-seen"
+                >Movies I Haven't Seen</label
+              ><br />
+              <input
+                type="radio"
+                id="show-have-seen"
+                name="show-val"
+                value="only-have-seen"
+              /><label class="text-white ml-1" for="show-have-seen"
+                >Movies I Have Seen</label
+              >
+            </div>
+          </div>
+        </section>
+        <!-- apply btn -->
+        <section class="flex justify-center items-center">
+          <input
+            type="submit"
+            value="apply"
+            class="bg-primary text-white p-3 rounded-3xl"
+          />
+        </section>
+      </section>
+    </aside>
+  </body>
+  <script src="./script.js"></script>
+</html>
