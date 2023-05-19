@@ -78,7 +78,7 @@
         </section>
         <section class="text-sm pb-3 pt-3">
           <h2 class="nav-section-header">Menu</h2>
-          <a class="nav-link" href="./friends.html">
+          <a class="nav-link" href="./movies.html">
             <img
               src="../static/movie.png  "
               alt="friend icon"
@@ -86,7 +86,7 @@
             />
             <span>Movies</span>
           </a>
-          <a class="nav-link" href="./friends.html">
+          <a class="nav-link" href="./tv.html">
             <img
               src="../static/TVshow.png  "
               alt="friend icon"
@@ -265,11 +265,19 @@
         </div>
       </section>
 
-      <!-- new movies container -->
+      <!-- movies container -->
       <section class="movie-poster-container p-8">
-        <div class="flex justify-between mb-3 items-center">
-          <h2 class="text-white text-lg">New Movies</h2>
-          <a href="#" class="text-primary text-sm">See all</a>
+        <div class="flex justify-between items-center">
+          <h2 class="text-white text-lg">Movies</h2>
+          <a href="./movies.html" class="text-primary text-sm">See all</a>
+        </div>
+        <div
+          class="selector-container mb-3 text-secondary flex justify-start gap-4 text-sm md:text-base"
+        >
+          <span class="active-selector">Popular</span>
+          <span>Now playing</span>
+          <span>Upcoming</span>
+          <span>Top rated</span>
         </div>
         <div class="flex flex-wrap justify-between">
           <!-- new movies container  -->
@@ -448,11 +456,19 @@
           </div>
         </div>
       </section>
-      <!-- For You container -->
+      <!-- tv shows container -->
       <section class="movie-poster-container p-8">
-        <div class="flex justify-between mb-3 items-center">
-          <h2 class="text-white text-lg">For you</h2>
-          <a href="#" class="text-primary text-sm">See all</a>
+        <div class="flex justify-between items-center">
+          <h2 class="text-white text-lg">TV shows</h2>
+          <a href="./tv.html" class="text-primary text-sm">See all</a>
+        </div>
+        <div
+          class="selector-container mb-3 text-secondary flex justify-start gap-4 text-sm md:text-base"
+        >
+          <span class="active-selector">Popular</span>
+          <span>Airing Today</span>
+          <span>On TV</span>
+          <span>Top rated</span>
         </div>
         <div class="flex flex-wrap justify-between">
           <!-- new movies container  -->
@@ -628,167 +644,220 @@
               </div>
             </a>
             <h3 class="text-white ml-1">Boston Strangler</h3>
+          </div>
+        </div>
+      </section>
+      <!-- people container -->
+      <section class="movie-poster-container p-8">
+        <div class="flex justify-between mb-3 items-center">
+          <h2 class="text-white text-lg">People</h2>
+          <a href="./people.html" class="text-primary text-sm">See all</a>
+        </div>
+        <div class="flex flex-wrap justify-between">
+          <!-- people container  -->
+          <div>
+            <a class="thumbnail-image relative">
+              <img
+                src="../static/people/thomasin.jpg"
+                alt="movie poster"
+                class="movie-poster"
+              />
+              <div
+                class="overlay-desc absolute top-0 left-0 rounded-2xl w-full h-full p-3 flex items-center justify-between flex-col gap-1 transition-all opacity-0"
+              >
+                <div>
+                  <h3 class="text-white ml-1 text-center">Thomasin mckenzie</h3>
+                </div>
+                <div>
+                  <div class="known-credit-number text-center">24</div>
+                  <div class="known-credit-title text-center">known credit</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- people container  -->
+          <div>
+            <a class="thumbnail-image relative">
+              <img
+                src="../static/people/valorie.jpg"
+                alt="movie poster"
+                class="movie-poster"
+              />
+              <div
+                class="overlay-desc absolute top-0 left-0 rounded-2xl w-full h-full p-3 flex items-center justify-between flex-col gap-1 transition-all opacity-0"
+              >
+                <div>
+                  <h3 class="text-white ml-1 text-center">valorie curry</h3>
+                </div>
+                <div>
+                  <div class="known-credit-number text-center">13</div>
+                  <div class="known-credit-title text-center">known credit</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- people container  -->
+          <div>
+            <a class="thumbnail-image relative">
+              <img
+                src="../static/people/olive.jpg"
+                alt="movie poster"
+                class="movie-poster"
+              />
+              <div
+                class="overlay-desc absolute top-0 left-0 rounded-2xl w-full h-full p-3 flex items-center justify-between flex-col gap-1 transition-all opacity-0"
+              >
+                <div>
+                  <h3 class="text-white ml-1 text-center">Olive Cooper</h3>
+                </div>
+                <div>
+                  <div class="known-credit-number text-center">24</div>
+                  <div class="known-credit-title text-center">known credit</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- people container  -->
+          <div>
+            <a class="thumbnail-image relative">
+              <img
+                src="../static/people/andrew.jpg"
+                alt="movie poster"
+                class="movie-poster"
+              />
+              <div
+                class="overlay-desc absolute top-0 left-0 rounded-2xl w-full h-full p-3 flex items-center justify-between flex-col gap-1 transition-all opacity-0"
+              >
+                <div>
+                  <h3 class="text-white ml-1 text-center">Andrew Scott</h3>
+                </div>
+                <div>
+                  <div class="known-credit-number text-center">45</div>
+                  <div class="known-credit-title text-center">known credit</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- people container  -->
+          <div>
+            <a class="thumbnail-image relative">
+              <img
+                src="../static/people/spartacus.jpg"
+                alt="movie poster"
+                class="movie-poster"
+              />
+              <div
+                class="overlay-desc absolute top-0 left-0 rounded-2xl w-full h-full p-3 flex items-center justify-between flex-col gap-1 transition-all opacity-0"
+              >
+                <div>
+                  <h3 class="text-white ml-1 text-center">spartacus</h3>
+                </div>
+                <div>
+                  <div class="known-credit-number text-center">20</div>
+                  <div class="known-credit-title text-center">known credit</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- people container  -->
+          <div>
+            <a class="thumbnail-image relative">
+              <img
+                src="../static/people/jesse.jpg"
+                alt="movie poster"
+                class="movie-poster"
+              />
+              <div
+                class="overlay-desc absolute top-0 left-0 rounded-2xl w-full h-full p-3 flex items-center justify-between flex-col gap-1 transition-all opacity-0"
+              >
+                <div>
+                  <h3 class="text-white ml-1 text-center">Jesse Williams</h3>
+                </div>
+                <div>
+                  <div class="known-credit-number text-center">24</div>
+                  <div class="known-credit-title text-center">known credit</div>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </section>
     </main>
-    <aside class="w-[25%] pt-16 hidden sm:block">
-      <!-- online friends bar -->
-      <section class="flex flex-col gap-8 sticky top-20">
-        <a
-          href="#"
-          class="add-friend table m-auto bg-primary text-white p-3 rounded-2xl"
-        >
-          add a new friend
-        </a>
-        <!-- friend profile bar container -->
-        <div class="friend-profiles-container m-auto flex flex-col gap-8">
-          <!-- a friend profile -->
-          <a href="#" class="profile-container flex gap-2">
-            <div class="avatar-container relative">
-              <img
-                class="rounded-full"
-                src="../static/friend-avatars/1.jpg"
-                alt="friend avatar"
-                width="50px"
-                height="50px"
-              />
-              <img
-                class="absolute top-0 right-0"
-                src="../static/online-status.png"
-                alt="online status"
-                width="12px"
-              />
-            </div>
-            <div class="username-container">
-              <!-- username -->
-              <span class="block text-white">Faranseque</span>
-              <!-- status -->
-              <span class="block text-secondary">hello world !</span>
-            </div>
-          </a>
-          <!-- a friend profile -->
-          <a href="#" class="profile-container flex gap-2">
-            <div class="avatar-container relative">
-              <img
-                class="rounded-full"
-                src="../static/friend-avatars/2.jpg"
-                alt="friend avatar"
-                width="50px"
-                height="50px"
-              />
-              <img
-                class="absolute top-0 right-0"
-                src="../static/online-status.png"
-                alt="online status"
-                width="12px"
-              />
-            </div>
-            <div class="username-container">
-              <!-- username -->
-              <span class="block text-white">AliAkhbar</span>
-              <!-- status -->
-              <span class="block text-secondary">no hate</span>
-            </div>
-          </a>
-          <!-- a friend profile -->
-          <a href="#" class="profile-container flex gap-2">
-            <div class="avatar-container relative">
-              <img
-                class="rounded-full"
-                src="../static/friend-avatars/3.jpg"
-                alt="friend avatar"
-                width="50px"
-                height="50px"
-              />
-              <img
-                class="absolute top-0 right-0"
-                src="../static/online-status.png"
-                alt="online status"
-                width="12px"
-              />
-            </div>
-            <div class="username-container">
-              <!-- username -->
-              <span class="block text-white">lileson</span>
-              <!-- status -->
-              <span class="block text-secondary">bio</span>
-            </div>
-          </a>
-          <!-- a friend profile -->
-          <a href="#" class="profile-container flex gap-2">
-            <div class="avatar-container relative">
-              <img
-                class="rounded-full"
-                src="../static/friend-avatars/4.jpg"
-                alt="friend avatar"
-                width="50px"
-                height="50px"
-              />
-              <img
-                class="absolute top-0 right-0"
-                src="../static/online-status.png"
-                alt="online status"
-                width="12px"
-              />
-            </div>
-            <div class="username-container">
-              <!-- username -->
-              <span class="block text-white">rezdude</span>
-              <!-- status -->
-              <span class="block text-secondary">...</span>
-            </div>
-          </a>
-          <!-- a friend profile -->
-          <a href="#" class="profile-container flex gap-2">
-            <div class="avatar-container relative">
-              <img
-                class="rounded-full"
-                src="../static/friend-avatars/5.jpg"
-                alt="friend avatar"
-                width="50px"
-                height="50px"
-              />
-              <img
-                class="absolute top-0 right-0 hidden"
-                src="../static/online-status.png"
-                alt="online status"
-                width="12px"
-              />
-            </div>
-            <div class="username-container">
-              <!-- username -->
-              <span class="block text-white">moriarty</span>
-              <!-- status -->
-              <span class="block text-secondary">got you !</span>
-            </div>
-          </a>
-          <!-- a friend profile -->
-          <a href="#" class="profile-container flex gap-2">
-            <div class="avatar-container relative">
-              <img
-                class="rounded-full"
-                src="../static/friend-avatars/6.jpg"
-                alt="friend avatar"
-                width="50px"
-                height="50px"
-              />
-              <img
-                class="absolute top-0 right-0 hidden"
-                src="../static/online-status.png"
-                alt="online status"
-                width="12px"
-              />
-            </div>
-            <div class="username-container">
-              <!-- username -->
-              <span class="block text-white">socrates</span>
-              <!-- status -->
-              <span class="block text-secondary">I know nothing !</span>
-            </div>
-          </a>
-          <!-- see all friends -->
-          <a href="#" class="text-primary text-sm text-center">See all</a>
+    <aside class="w-[25%] p-4 hidden sm:block">
+      <!-- Trending searches -->
+      <section class="flex flex-col gap-8 sticky top-6">
+        <h2 class="text-white">Trending searches :</h2>
+        <div class="container">
+          <!-- a search instance -->
+          <div
+            class="flex justify-start gap-2 p-2 items-center mb-2 bg-secondary rounded-xl"
+          >
+            <img
+              src="./../static/trending.png"
+              alt="trending icon"
+              class="w-7"
+            />
+            <p class="text-white text-center w-full">
+              The Super Mario Bros. Movie
+            </p>
+          </div>
+          <!-- a search instance -->
+          <div
+            class="flex justify-start gap-2 p-2 items-center mb-2 bg-secondary rounded-xl"
+          >
+            <img
+              src="./../static/trending.png"
+              alt="trending icon"
+              class="w-7"
+            />
+            <p class="text-white text-center w-full">Fast X</p>
+          </div>
+          <!-- a search instance -->
+          <div
+            class="flex justify-start gap-2 p-2 items-center mb-2 bg-secondary rounded-xl"
+          >
+            <img
+              src="./../static/trending.png"
+              alt="trending icon"
+              class="w-7"
+            />
+            <p class="text-white text-center w-full">Sisu</p>
+          </div>
+          <!-- a search instance -->
+          <div
+            class="flex justify-start gap-2 p-2 items-center mb-2 bg-secondary rounded-xl"
+          >
+            <img
+              src="./../static/trending.png"
+              alt="trending icon"
+              class="w-7"
+            />
+            <p class="text-white text-center w-full">
+              Ant-Man and the Wasp: Quantumania
+            </p>
+          </div>
+          <!-- a search instance -->
+          <div
+            class="flex justify-start gap-2 p-2 items-center mb-2 bg-secondary rounded-xl"
+          >
+            <img
+              src="./../static/trending.png"
+              alt="trending icon"
+              class="w-7"
+            />
+            <p class="text-white text-center w-full">Dungeons & Dragons</p>
+          </div>
+          <!-- a search instance -->
+          <div
+            class="flex justify-start gap-2 p-2 items-center mb-2 bg-secondary rounded-xl"
+          >
+            <img
+              src="./../static/trending.png"
+              alt="trending icon"
+              class="w-7"
+            />
+            <p class="text-white text-center w-full">To Catch a Killer</p>
+          </div>
         </div>
       </section>
     </aside>
