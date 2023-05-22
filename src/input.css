@@ -63,6 +63,9 @@
   .genre-selector-inactive {
     @apply mb-1 p-1 px-2 bg-secondary rounded-2xl text-white inline-block text-sm;
   }
+  .movie-genre-bar {
+    @apply flex justify-center;
+  }
 }
 
 body {
