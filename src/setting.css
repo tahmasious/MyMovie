@@ -1,0 +1,8 @@
+.movie-genre-bar:hover div {
+  display: flex;
+}
+
+.movie-genre-bar div {
+  width: 100px;
+  height: 50px;
+}
