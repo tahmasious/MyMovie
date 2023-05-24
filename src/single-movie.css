@@ -80,3 +80,28 @@
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
+.scroller {
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroller::-webkit-scrollbar {
+  margin-top: 10px;
+  width: 5px;
+  height: 8px;
+  background-color: #16171b;
+}
+
+.scroller::-webkit-scrollbar-track {
+  background: #16171b;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.scroller::-webkit-scrollbar-thumb {
+  background: #494b57;
+  border-radius: 5px;
+}
+
+.active-selector {
+  color: #d91f27;
+}

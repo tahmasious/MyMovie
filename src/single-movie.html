@@ -42,7 +42,7 @@
         </div>
         <!-- main links -->
         <section class="text-sm pb-3 pt-3">
-          <h2 class="nav-section-header">Menu</h2>
+          <h2 class="nav-section-header">Personal</h2>
           <a class="nav-link" href="./home.html">
             <img
               src="../static/home.png"
@@ -51,7 +51,7 @@
             />
             <span>Home</span>
           </a>
-          <a class="nav-link active" href="#">
+          <a class="nav-link active" href="./browse.html">
             <img
               src="../static/compass-active.png"
               alt="browse icon"
@@ -77,22 +77,30 @@
           </a> -->
         </section>
         <section class="text-sm pb-3 pt-3">
-          <h2 class="nav-section-header">Social</h2>
-          <a class="nav-link" href="./friends.html">
+          <h2 class="nav-section-header">Menu</h2>
+          <a class="nav-link" href="./movies.html">
             <img
-              src="../static/friend.png"
+              src="../static/movie.png  "
               alt="friend icon"
-              class="w-3 h-4 inline mr-[14px] ml-[2px]"
+              class="w-4 h-3 inline mr-[14px] ml-[2px]"
             />
-            <span>Friends</span>
+            <span>Movies</span>
           </a>
-          <a class="nav-link" href="./party-retrieve.html">
+          <a class="nav-link" href="./tv.html">
             <img
-              src="../static/party.png"
+              src="../static/TVshow.png  "
+              alt="friend icon"
+              class="w-4 h-4 inline mr-[14px] ml-[1px]"
+            />
+            <span>TV shows</span>
+          </a>
+          <a class="nav-link" href="./people.html">
+            <img
+              src="../static/people.png"
               alt="party icon"
               class="w-4 h-4 inline mr-3"
             />
-            <span>Parties</span>
+            <span>People</span>
           </a>
         </section>
         <section class="text-sm pb-3 pt-3">
@@ -144,7 +152,7 @@
       </div>
     </nav>
     <!-- main content (middle section) -->
-    <main class="w-[100%]">
+    <main class="w-full">
       <!-- content section -->
       <section class="content relative h-[33rem]">
         <div class="phone-icon-menu-container sm:hidden block mb-2">
@@ -297,6 +305,47 @@
             nearby human experimentation facility opens a gateway between the
             Upside Down and the normal world.
           </p>
+        </section>
+        <section class="media mb-6 w-full md:w-full">
+          <h2 class="text-secondary mb-2">MEDIA</h2>
+          <div
+            class="selector-container mb-3 text-secondary flex justify-start gap-4 text-md"
+          >
+            <span class="active-selector">Most popular</span>
+            <span>Videos</span>
+            <span>Backdrops</span>
+            <span>Posters</span>
+          </div>
+          <div
+            class="w-full scroller flex rounded-lg pb-2 overflow-x-scroll overflow-y-hidden whitespace-nowrap"
+          >
+            <img
+              src="../static/movie-snapshot/stranger-things.jpg"
+              alt=""
+              class="h-44"
+            />
+            <img
+              src="../static/movie-snapshot/stranger-things-2.jpg"
+              alt=""
+              class="h-44"
+            /><img
+              src="../static/movie-snapshot/stranger-things-3.jpg"
+              alt=""
+              class="h-44"
+            /><img
+              src="../static/movie-snapshot/stranger-things-4.jpg"
+              alt=""
+              class="h-44"
+            /><img
+              src="../static/movie-snapshot/stranger-things-5.jpg"
+              alt=""
+              class="h-44"
+            /><img
+              src="../static/movie-snapshot/stranger-things-6.jpg"
+              alt=""
+              class="h-44"
+            />
+          </div>
         </section>
         <section class="notable-cast mb-6">
           <h2 class="text-secondary mb-2">NOTABLE CAST</h2>
@@ -514,164 +563,87 @@
         </section>
       </div>
     </main>
-    <aside class="w-[25%] pt-16 hidden sm:block">
-      <!-- online friends bar -->
-      <section class="flex flex-col gap-8 sticky top-20">
-        <a
-          href="#"
-          class="add-friend table m-auto bg-primary text-white p-3 rounded-2xl"
-        >
-          add a new friend
-        </a>
-        <!-- friend profile bar container -->
-        <div class="friend-profiles-container m-auto flex flex-col gap-8">
-          <!-- a friend profile -->
-          <a href="#" class="profile-container flex gap-2">
-            <div class="avatar-container relative">
-              <img
-                class="rounded-full"
-                src="../static/friend-avatars/1.jpg"
-                alt="friend avatar"
-                width="50px"
-                height="50px"
-              />
-              <img
-                class="absolute top-0 right-0"
-                src="../static/online-status.png"
-                alt="online status"
-                width="12px"
-              />
+    <aside class="w-[25%] p-4 hidden sm:block">
+      <section class="flex flex-col gap-8 sticky top-5">
+        <!-- sorting bar -->
+        <section>
+          <h2 class="mb-4 text-white">Reviews</h2>
+          <div class="review-container rounded-lg bg-[#272932]">
+            <!-- a review -->
+            <div class="review p-2 border-b-2">
+              <div class="author flex items-center gap-2 mb-2">
+                <img
+                  src="../static/friend-avatars/1.jpg"
+                  alt="user avatar"
+                  class="h-10 w-10 rounded-full"
+                />
+                <span class="author-usename text-white text-sm"
+                  >Faranesque</span
+                >
+                <span class="divider">.</span>
+                <span class="datetime text-[12px] text-gray-600"
+                  >1 hour ago</span
+                >
+              </div>
+              <div class="review-text text-white text-sm">
+                <p>
+                  At first I was skeptical about it because of kids, but it came
+                  out very interesting, well shot TV show. Acting is also done
+                  very well.
+                </p>
+              </div>
             </div>
-            <div class="username-container">
-              <!-- username -->
-              <span class="block text-white">Faranseque</span>
-              <!-- status -->
-              <span class="block text-secondary">hello world !</span>
+            <!-- a review -->
+            <div class="review p-2 border-b-2">
+              <div class="author flex items-center gap-2 mb-2">
+                <img
+                  src="../static/friend-avatars/3.jpg"
+                  alt="user avatar"
+                  class="h-10 w-10 rounded-full"
+                />
+                <span class="author-usename text-white text-sm">AliAkhbar</span>
+                <span class="divider">.</span>
+                <span class="datetime text-[12px] text-gray-600"
+                  >1 hour ago</span
+                >
+              </div>
+              <div class="review-text text-white text-sm">
+                <p>
+                  At first I was skeptical about it because of kids, but it came
+                  out very interesting, well shot TV show. Acting is also done
+                  very well.
+                </p>
+              </div>
             </div>
-          </a>
-          <!-- a friend profile -->
-          <a href="#" class="profile-container flex gap-2">
-            <div class="avatar-container relative">
-              <img
-                class="rounded-full"
-                src="../static/friend-avatars/2.jpg"
-                alt="friend avatar"
-                width="50px"
-                height="50px"
-              />
-              <img
-                class="absolute top-0 right-0"
-                src="../static/online-status.png"
-                alt="online status"
-                width="12px"
-              />
+            <!-- a review -->
+            <div class="review p-2">
+              <div class="author flex items-center gap-2 mb-2">
+                <img
+                  src="../static/friend-avatars/2.jpg"
+                  alt="user avatar"
+                  class="h-10 w-10 rounded-full"
+                />
+                <span class="author-usename text-white text-sm">lileson</span>
+                <span class="divider">.</span>
+                <span class="datetime text-[12px] text-gray-600"
+                  >1 hour ago</span
+                >
+              </div>
+              <div class="review-text text-white text-sm">
+                <p>
+                  At first I was skeptical about it because of kids, but it came
+                  out very interesting, well shot TV show. Acting is also done
+                  very well.
+                </p>
+              </div>
             </div>
-            <div class="username-container">
-              <!-- username -->
-              <span class="block text-white">AliAkhbar</span>
-              <!-- status -->
-              <span class="block text-secondary">no hate</span>
-            </div>
-          </a>
-          <!-- a friend profile -->
-          <a href="#" class="profile-container flex gap-2">
-            <div class="avatar-container relative">
-              <img
-                class="rounded-full"
-                src="../static/friend-avatars/3.jpg"
-                alt="friend avatar"
-                width="50px"
-                height="50px"
-              />
-              <img
-                class="absolute top-0 right-0"
-                src="../static/online-status.png"
-                alt="online status"
-                width="12px"
-              />
-            </div>
-            <div class="username-container">
-              <!-- username -->
-              <span class="block text-white">lileson</span>
-              <!-- status -->
-              <span class="block text-secondary">bio</span>
-            </div>
-          </a>
-          <!-- a friend profile -->
-          <a href="#" class="profile-container flex gap-2">
-            <div class="avatar-container relative">
-              <img
-                class="rounded-full"
-                src="../static/friend-avatars/4.jpg"
-                alt="friend avatar"
-                width="50px"
-                height="50px"
-              />
-              <img
-                class="absolute top-0 right-0"
-                src="../static/online-status.png"
-                alt="online status"
-                width="12px"
-              />
-            </div>
-            <div class="username-container">
-              <!-- username -->
-              <span class="block text-white">rezdude</span>
-              <!-- status -->
-              <span class="block text-secondary">...</span>
-            </div>
-          </a>
-          <!-- a friend profile -->
-          <a href="#" class="profile-container flex gap-2">
-            <div class="avatar-container relative">
-              <img
-                class="rounded-full"
-                src="../static/friend-avatars/5.jpg"
-                alt="friend avatar"
-                width="50px"
-                height="50px"
-              />
-              <img
-                class="absolute top-0 right-0 hidden"
-                src="../static/online-status.png"
-                alt="online status"
-                width="12px"
-              />
-            </div>
-            <div class="username-container">
-              <!-- username -->
-              <span class="block text-white">moriarty</span>
-              <!-- status -->
-              <span class="block text-secondary">got you !</span>
-            </div>
-          </a>
-          <!-- a friend profile -->
-          <a href="#" class="profile-container flex gap-2">
-            <div class="avatar-container relative">
-              <img
-                class="rounded-full"
-                src="../static/friend-avatars/6.jpg"
-                alt="friend avatar"
-                width="50px"
-                height="50px"
-              />
-              <img
-                class="absolute top-0 right-0 hidden"
-                src="../static/online-status.png"
-                alt="online status"
-                width="12px"
-              />
-            </div>
-            <div class="username-container">
-              <!-- username -->
-              <span class="block text-white">socrates</span>
-              <!-- status -->
-              <span class="block text-secondary">I know nothing !</span>
-            </div>
-          </a>
-          <!-- see all friends -->
-          <a href="#" class="text-primary text-sm text-center">See all</a>
-        </div>
+          </div>
+          <button
+            class="table mt-7 m-auto bg-primary text-white p-3 rounded-2xl"
+          >
+            Add a Review
+          </button>
+        </section>
       </section>
     </aside>
   </body>
